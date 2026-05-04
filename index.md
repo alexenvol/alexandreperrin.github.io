@@ -2,76 +2,81 @@
 
 <img src="./img/profile.png" width="700">
 
-Engineering Student — Mechanical Design & Embedded Systems
+Élève-ingénieur — Conception mécanique & Systèmes embarqués
 
 ---
 
-## About Me
+## À propos
 
-Final-year engineering student at ENIB passionate about:
-- aerospace,
-- embedded systems,
-- mechanical design,
-- rapid prototyping,
-- and engineering innovation.
+Élève-ingénieur en dernière année à l’ENIB, passionné par :
+- l’aéronautique,
+- les systèmes embarqués,
+- la conception mécanique,
+- le prototypage rapide,
+- et l’innovation technologique.
 
 ---
 
-## Projects
+## Projets
 
-## LEGO CAD Construction Project
+## Projet de construction LEGO sous CATIA
 
-Personal project focused on recreating LEGO structures using CATIA V5.
+Projet personnel de modélisation et de reproduction de structures LEGO sous CATIA V5.
 
-### Objectives
-- 3D modeling of LEGO components
-- Assembly management in CATIA
-- Understanding of constraints and modular construction
-- Development of CAD skills through creative projects
+### Objectifs
+- Modélisation 3D de composants LEGO
+- Gestion d’assemblages sous CATIA
+- Compréhension des contraintes et de la construction modulaire
+- Développement des compétences CAO à travers des projets créatifs
 
 <img src="./img/lego-house.png" width="700">
 
-This project allowed me to improve my understanding of CAD assembly logic,
-part positioning and complex structure organization while combining engineering
-tools with creative design.
+Ce projet m’a permis d’améliorer ma compréhension de la logique d’assemblage en CAO,
+du positionnement des pièces et de l’organisation de structures complexes,
+tout en combinant outils d’ingénierie et conception créative.
 
-### Autonomous Sailboat
-Development of an autonomous sailboat platform using:
+---
+
+### Voilier autonome
+
+Développement d’une plateforme de voilier autonome intégrant :
 - STM32,
-- embedded systems,
-- 3D printing,
-- rapid prototyping.
+- systèmes embarqués,
+- impression 3D,
+- prototypage rapide.
 
 <img src="./img/Sailboat.png" width="700">
 
 ---
 
-### STM32 Motor Control
-Embedded motor control system with:
-- PWM,
-- encoder feedback,
-- PID regulation,
-- UART communication.
+### Système de contrôle moteur STM32
+
+Développement d’un système embarqué de contrôle moteur comprenant :
+- commande PWM,
+- gestion d’encodeur,
+- régulation PID,
+- communication UART.
 
 ![STM32](assets/img/stm32.jpg)
 
 ---
 
-## Professional Experience
+## Expérience professionnelle
 
 ### ArianeGroup
-Assistant Engineering Intern:
-- CAD design,
-- technical coordination,
-- aerospace testing systems,
-- 3D printed prototypes.
+
+Stage assistant ingénieur :
+- conception CAO,
+- coordination technique,
+- systèmes d’essais aéronautiques,
+- prototypage par impression 3D.
 
 ---
 
 ## Contact
 
-- LinkedIn:
+- LinkedIn :
   https://www.linkedin.com/in/alexandre-perrin-5253bb1b0/
 
-- Email:
+- Email :
   alexandreperrin555@gmail.com
