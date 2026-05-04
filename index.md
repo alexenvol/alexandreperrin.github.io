@@ -45,7 +45,7 @@ Développement d’une plateforme de voilier autonome intégrant :
 - impression 3D,
 - prototypage rapide.
 
-<img src="./img/Sailboat.png" width="700">
+<img src="./img/sailboat.png" width="700">
 
 ---
 
