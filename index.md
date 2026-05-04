@@ -1,6 +1,6 @@
 # Alexandre Perrin
 
-![Profile](./img/profile.png)
+<img src="./img/profile.png" width="700">
 
 Engineering Student — Mechanical Design & Embedded Systems
 
@@ -42,7 +42,7 @@ Development of an autonomous sailboat platform using:
 - 3D printing,
 - rapid prototyping.
 
-![Sailboat](assets/img/sailboat.jpg)
+<img src="./img/Sailboat.png" width="700">
 
 ---
 
