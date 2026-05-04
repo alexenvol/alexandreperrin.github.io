@@ -1,6 +1,6 @@
 # Alexandre Perrin
 
-<img src="./img/profile.png" width="220">
+![Profile](./img/profile.png)
 
 Engineering Student — Mechanical Design & Embedded Systems
 
