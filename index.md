@@ -19,6 +19,22 @@ Final-year engineering student at ENIB passionate about:
 
 ## Projects
 
+## LEGO CAD Construction Project
+
+Personal project focused on recreating LEGO structures using CATIA V5.
+
+### Objectives
+- 3D modeling of LEGO components
+- Assembly management in CATIA
+- Understanding of constraints and modular construction
+- Development of CAD skills through creative projects
+
+<img src="./img/lego-house.png" width="700">
+
+This project allowed me to improve my understanding of CAD assembly logic,
+part positioning and complex structure organization while combining engineering
+tools with creative design.
+
 ### Autonomous Sailboat
 Development of an autonomous sailboat platform using:
 - STM32,
