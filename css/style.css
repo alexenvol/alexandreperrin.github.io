@@ -654,3 +654,29 @@ a {
 
   line-height: 1.4;
 }
+
+/* ---------- Eco score ---------- */
+
+.eco-score {
+
+  margin-top: 10px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+/* ---------- Référence ---------- */
+
+.eco-reference {
+
+  margin-top: 6px;
+
+  font-size: 0.72rem;
+
+  line-height: 1.3;
+
+  opacity: 0.6;
+
+  max-width: 220px;
+}
