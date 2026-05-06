@@ -4,20 +4,27 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
   <title>Projets — Alexandre Perrin</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon"
+    type="image/x-icon"
+    href="favicon.ico">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Police premium -->
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
 
   <link rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -25,100 +32,180 @@
 
 <body class="dark-mode">
 
+  <!-- Navigation -->
+
   <nav>
+
     <a href="index.html">À propos</a>
     <a href="projects.html">Projets</a>
     <a href="podcast.html">Podcast</a>
     <a href="contact.html">Contact</a>
+
   </nav>
+
+  <!-- Container -->
 
   <div class="container">
 
-    <section class="card">
+    <!-- Titre -->
 
-      <h2>Projets</h2>
+    <h1>Projets</h1>
 
-      <h3>Projet LEGO sous CATIA</h3>
+    <div class="subtitle">
 
-      <p>
-        Projet personnel de modélisation et d’assemblage LEGO sous CATIA V5.
-      </p>
+      Conception mécanique, systèmes embarqués,
+      automatisme et prototypage.
 
-      <ul>
-        <li>Modélisation 3D de composants LEGO</li>
-        <li>Gestion d’assemblages sous CATIA</li>
-        <li>Compréhension des contraintes modulaires</li>
-      </ul>
+    </div>
 
-      <img src="img/lego-house.png" class="project-image">
+    <!-- LEGO -->
 
-      <h3>Mallette CAO paramétrique</h3>
+    <section class="project-section">
 
-      <p>
-        Projet de conception d’une mallette modulaire sous CATIA V5 utilisant
-        le paramétrage avancé afin de générer plusieurs configurations à partir
-        d’un même modèle.
-      </p>
+      <div class="project-content">
 
-      <ul>
-        <li>Conception paramétrique sous CATIA V5</li>
-        <li>Architecture modulaire et évolutive</li>
-        <li>Création automatique de variantes</li>
-        <li>Assemblages et contraintes paramétrées</li>
-        <li>Optimisation pour fabrication et prototypage</li>
-      </ul>
+        <h3>Projet LEGO sous CATIA</h3>
 
-      <img src="img/mallette-cao.png" class="project-image">
+        <p>
+          Projet personnel de modélisation
+          et d’assemblage LEGO sous CATIA V5.
+        </p>
 
-      <h3>Voilier autonome</h3>
+        <ul>
 
-      <p>
-        Projet de développement d’un voilier autonome expérimental.
-      </p>
+          <li>Modélisation 3D</li>
+          <li>Assemblages complexes</li>
+          <li>Contraintes modulaires</li>
 
-      <ul>
-        <li>Systèmes embarqués et électronique</li>
-        <li>Architecture de navigation autonome</li>
-        <li>Asservissement et contrôle</li>
-        <li>Conception mécanique et CAO</li>
-        <li>Impression 3D et prototypage rapide</li>
-        <li>Intégration capteurs / actionneurs</li>
-        <li>Tests et validation expérimentale</li>
-      </ul>
+        </ul>
 
-      <img src="img/sailboat.png" class="project-image">
+      </div>
 
-      <h3>Guitare asservie</h3>
+      <div class="project-visual">
 
-      <p>
-        Développement d’un système embarqué basé sur STM32 permettant
-        l’asservissement d’une guitare via une boucle de contrôle temps réel.
-      </p>
+        <img src="img/lego-house.png"
+          class="project-image"
+          alt="Projet LEGO">
 
-      <ul>
-        <li>Programmation embarquée en C sur STM32</li>
-        <li>Commande d’actionneurs par PWM</li>
-        <li>Mise en œuvre d’une régulation type PID</li>
-        <li>Interaction mécatronique entre électronique et mécanique</li>
-      </ul>
+      </div>
 
-      <img src="img/guitare-asservie.png" class="project-image">
+    </section>
 
-      <h3>Galerie</h3>
+    <!-- MALLETTE -->
 
-      <div class="gallery">
-        <img src="img/lego-house.png" alt="Projet LEGO">
-        <img src="img/sailboat.png" alt="Voilier autonome">
-        <img src="img/profile.png" alt="Photo de profil">
+    <section class="project-section reverse">
+
+      <div class="project-content">
+
+        <h3>Mallette CAO paramétrique</h3>
+
+        <p>
+          Conception modulaire sous CATIA V5
+          basée sur le paramétrage avancé.
+        </p>
+
+        <ul>
+
+          <li>Architecture évolutive</li>
+          <li>Création automatique de variantes</li>
+          <li>Conception paramétrique</li>
+
+        </ul>
+
+      </div>
+
+      <div class="project-visual">
+
+        <img src="img/mallette-cao.png"
+          class="project-image"
+          alt="Mallette CAO">
+
+      </div>
+
+    </section>
+
+    <!-- VOILIER -->
+
+    <section class="project-section">
+
+      <div class="project-content">
+
+        <h3>Voilier autonome</h3>
+
+        <p>
+          Développement d’un système autonome
+          mêlant électronique embarquée,
+          mécanique et navigation.
+        </p>
+
+        <ul>
+
+          <li>Systèmes embarqués</li>
+          <li>Asservissement</li>
+          <li>Impression 3D</li>
+          <li>Capteurs et actionneurs</li>
+
+        </ul>
+
+      </div>
+
+      <div class="project-visual">
+
+        <img src="img/sailboat.png"
+          class="project-image"
+          alt="Voilier autonome">
+
+      </div>
+
+    </section>
+
+    <!-- GUITARE -->
+
+    <section class="project-section reverse">
+
+      <div class="project-content">
+
+        <h3>Guitare asservie</h3>
+
+        <p>
+          Système mécatronique STM32 permettant
+          l’asservissement temps réel
+          d’un instrument automatisé.
+        </p>
+
+        <ul>
+
+          <li>Programmation STM32</li>
+          <li>PWM et PID</li>
+          <li>Boucle de contrôle temps réel</li>
+
+        </ul>
+
+      </div>
+
+      <div class="project-visual">
+
+        <img src="img/guitare-asservie.png"
+          class="project-image"
+          alt="Guitare asservie">
+
       </div>
 
     </section>
 
   </div>
 
-  <button class="darkmode-button" onclick="toggleDarkMode()" id="themeButton">
+  <!-- Bouton dark mode -->
+
+  <button class="darkmode-button"
+    onclick="toggleDarkMode()"
+    id="themeButton">
+
     ☀️ Mode jour
+
   </button>
+
+  <!-- JS -->
 
   <script src="js/theme.js"></script>
 
