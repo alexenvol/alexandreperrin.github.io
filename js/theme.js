@@ -1,3 +1,5 @@
+document.body.classList.add("js-enabled");
+
 const button = document.getElementById("themeButton");
 
 /* ---------- Chargement du thème ---------- */
