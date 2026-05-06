@@ -212,7 +212,7 @@
   </style>
 </head>
 
-<body>
+<body class="dark-mode">
 
   <nav>
     <a href="#about">À propos</a>
@@ -353,13 +353,23 @@
 
   </div>
 
-  <button class="darkmode-button" onclick="toggleDarkMode()">
-    🌙 Mode sombre
+  <button class="darkmode-button" onclick="toggleDarkMode()" id="themeButton">
+    ☀️ Mode jour
   </button>
 
   <script>
+    const button = document.getElementById("themeButton");
+  
     function toggleDarkMode() {
+  
       document.body.classList.toggle("dark-mode");
+  
+      if (document.body.classList.contains("dark-mode")) {
+        button.innerHTML = "☀️ Mode jour";
+      } else {
+        button.innerHTML = "🌙 Mode sombre";
+      }
+  
     }
   </script>
 
