@@ -74,19 +74,20 @@ function calculateCarbonFootprint() {
 
 }
 
-/* ---------- Chargement ---------- */
+/* ---------- Temps réel ---------- */
 
 window.addEventListener("load", () => {
 
+  calculateCarbonFootprint();
+
   /*
-    Petit délai :
-    laisse les ressources finir de charger
+    Recalcul périodique
   */
 
-  setTimeout(() => {
+  setInterval(() => {
 
     calculateCarbonFootprint();
 
-  }, 1200);
+  }, 2000);
 
 });
