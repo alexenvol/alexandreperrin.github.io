@@ -145,3 +145,74 @@ window.addEventListener(
 );
 
 revealProjects();
+
+/* ---------- Eco impact estimation ---------- */
+
+function calculateCarbonFootprint() {
+
+  const resources =
+    performance.getEntriesByType("resource");
+
+  let totalBytes = 0;
+
+  resources.forEach((resource) => {
+
+    if (resource.transferSize) {
+
+      totalBytes += resource.transferSize;
+
+    }
+
+  });
+
+  /* ---------- Conversion ---------- */
+
+  const totalMB =
+    totalBytes / (1024 * 1024);
+
+  /* ---------- Estimation carbone ---------- */
+
+  /*
+    Approximation inspirée
+    WebsiteCarbon :
+
+    ~0.5 g CO2 / MB transféré
+  */
+
+  const carbon =
+    totalMB * 0.5;
+
+  /* ---------- Nombre de requêtes ---------- */
+
+  const requests =
+    resources.length;
+
+  /* ---------- Affichage ---------- */
+
+  const carbonElement =
+    document.getElementById("carbonValue");
+
+  if (carbonElement) {
+
+    carbonElement.innerHTML = `
+      ${carbon.toFixed(2)} g CO₂ / visite<br>
+      ${totalMB.toFixed(2)} MB • ${requests} requêtes
+    `;
+
+  }
+
+}
+
+/* ---------- Attendre chargement ---------- */
+
+window.addEventListener(
+  "load",
+  () => {
+
+    setTimeout(
+      calculateCarbonFootprint,
+      500
+    );
+
+  }
+);
