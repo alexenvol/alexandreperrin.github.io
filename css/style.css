@@ -179,3 +179,97 @@ a {
     flex-wrap: wrap;
   }
 }
+
+/* ---------- Animations ---------- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Titre ---------- */
+
+h1 {
+  animation: fadeUp 1s ease;
+}
+
+/* ---------- Sous-titre ---------- */
+
+.subtitle {
+  animation: fadeUp 1.3s ease;
+}
+
+/* ---------- Images ---------- */
+
+.profile-image {
+  box-shadow: 0 8px 20px var(--shadow);
+  animation: fadeUp 1.5s ease;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  animation: fadeUp 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+/* ---------- Images projets ---------- */
+
+.project-image {
+  transition: transform 0.4s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.01);
+}
+
+/* ---------- Galerie ---------- */
+
+.gallery img {
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- Navigation ---------- */
+
+nav a {
+  transition: transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Bouton dark mode ---------- */
+
+.darkmode-button {
+  transition: transform 0.2s ease;
+}
+
+.darkmode-button:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Podcast ---------- */
+
+.podcast-player {
+  transition: transform 0.3s ease;
+}
+
+.podcast-player:hover {
+  transform: scale(1.01);
+}
