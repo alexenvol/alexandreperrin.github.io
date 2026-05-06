@@ -2,7 +2,9 @@ const button = document.getElementById("themeButton");
 
 /* ---------- Chargement du thème ---------- */
 
-if (localStorage.getItem("theme") === "light") {
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
 
   document.body.classList.remove("dark-mode");
   button.innerHTML = "🌙 Mode sombre";
@@ -20,7 +22,9 @@ function toggleDarkMode() {
 
   document.body.classList.toggle("dark-mode");
 
-  if (document.body.classList.contains("dark-mode")) {
+  const isDark = document.body.classList.contains("dark-mode");
+
+  if (isDark) {
 
     localStorage.setItem("theme", "dark");
     button.innerHTML = "☀️ Mode jour";
