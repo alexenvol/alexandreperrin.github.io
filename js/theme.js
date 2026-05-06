@@ -113,3 +113,35 @@ lightbox.addEventListener("click", () => {
   lightbox.classList.remove("active");
 
 });
+
+/* ---------- Apple-like scroll reveal ---------- */
+
+const projectSections =
+  document.querySelectorAll(".project-section");
+
+function revealProjects() {
+
+  const trigger =
+    window.innerHeight * 0.85;
+
+  projectSections.forEach((section) => {
+
+    const top =
+      section.getBoundingClientRect().top;
+
+    if (top < trigger) {
+
+      section.classList.add("visible");
+
+    }
+
+  });
+
+}
+
+window.addEventListener(
+  "scroll",
+  revealProjects
+);
+
+revealProjects();
