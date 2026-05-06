@@ -181,10 +181,51 @@ function calculateCarbonFootprint() {
 
   /* ---------- Affichage ---------- */
 
-  carbonElement.innerHTML = `
-    ${carbon.toFixed(2)} g CO₂ / visite<br>
-    ${totalMB.toFixed(2)} MB • ${requests} requêtes
-  `;
+/* ---------- Eco score ---------- */
+
+let ecoScore = "";
+let ecoClass = "";
+
+if (carbon < 0.10) {
+
+  ecoScore = "🟢 Excellent";
+  ecoClass = "excellent";
+
+} else if (carbon < 0.50) {
+
+  ecoScore = "🟡 Correct";
+  ecoClass = "correct";
+
+} else if (carbon < 1.00) {
+
+  ecoScore = "🟠 Moyen";
+  ecoClass = "medium";
+
+} else {
+
+  ecoScore = "🔴 Élevé";
+  ecoClass = "bad";
+
+}
+
+/* ---------- Affichage ---------- */
+
+carbonElement.innerHTML = `
+
+  ${carbon.toFixed(2)} g CO₂ / visite<br>
+
+  ${totalMB.toFixed(2)} MB • ${requests} requêtes
+
+  <div class="eco-score ${ecoClass}">
+    ${ecoScore}
+  </div>
+
+  <div class="eco-reference">
+    Référence inspirée des pratiques
+    européennes d’éco-conception web
+  </div>
+
+`;
 
 }
 
