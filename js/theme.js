@@ -1,3 +1,139 @@
+/* ---------- JS activé ---------- */
+
+document.body.classList.add("js-enabled");
+
+/* ---------- Bouton thème ---------- */
+
+const button =
+  document.getElementById("themeButton") || null;
+
+/* ---------- Chargement du thème ---------- */
+
+const savedTheme =
+  localStorage.getItem("theme");
+
+/* ---------- Application du thème ---------- */
+
+if (savedTheme === "light") {
+
+  document.body.classList.remove("dark-mode");
+
+  if (button) {
+    button.innerHTML = "🌙 Mode sombre";
+  }
+
+} else {
+
+  document.body.classList.add("dark-mode");
+
+  if (button) {
+    button.innerHTML = "☀️ Mode jour";
+  }
+
+}
+
+/* ---------- Toggle thème ---------- */
+
+function toggleDarkMode() {
+
+  document.body.classList.toggle("dark-mode");
+
+  const isDark =
+    document.body.classList.contains("dark-mode");
+
+  if (isDark) {
+
+    localStorage.setItem("theme", "dark");
+
+    if (button) {
+      button.innerHTML = "☀️ Mode jour";
+    }
+
+  } else {
+
+    localStorage.setItem("theme", "light");
+
+    if (button) {
+      button.innerHTML = "🌙 Mode sombre";
+    }
+
+  }
+
+}
+
+/* ---------- Reveal animations ---------- */
+
+const projectSections =
+  document.querySelectorAll(".project-section");
+
+function revealProjects() {
+
+  const trigger =
+    window.innerHeight * 0.85;
+
+  projectSections.forEach((section) => {
+
+    const top =
+      section.getBoundingClientRect().top;
+
+    if (top < trigger) {
+
+      section.classList.add("visible");
+
+    }
+
+  });
+
+}
+
+window.addEventListener(
+  "scroll",
+  revealProjects
+);
+
+revealProjects();
+
+/* ---------- Lightbox images ---------- */
+
+const images =
+  document.querySelectorAll(
+    ".project-image, .gallery img"
+  );
+
+if (images.length > 0) {
+
+  const lightbox =
+    document.createElement("div");
+
+  lightbox.classList.add("lightbox");
+
+  document.body.appendChild(lightbox);
+
+  const lightboxImage =
+    document.createElement("img");
+
+  lightbox.appendChild(lightboxImage);
+
+  images.forEach((image) => {
+
+    image.addEventListener("click", () => {
+
+      lightbox.classList.add("active");
+
+      lightboxImage.src = image.src;
+
+    });
+
+  });
+
+  lightbox.addEventListener("click", () => {
+
+    lightbox.classList.remove("active");
+
+  });
+
+}
+
 /* ---------- Eco impact estimation ---------- */
 
 function calculateCarbonFootprint() {
@@ -9,14 +145,6 @@ function calculateCarbonFootprint() {
 
   resources.forEach((resource) => {
 
-    /*
-      transferSize :
-      taille réellement transférée
-
-      encodedBodySize :
-      fallback plus fiable
-    */
-
     const size =
       resource.transferSize ||
       resource.encodedBodySize ||
@@ -26,40 +154,26 @@ function calculateCarbonFootprint() {
 
   });
 
-  /* ---------- Taille totale ---------- */
-
   const totalMB =
     totalBytes / (1024 * 1024);
-
-  /* ---------- Estimation carbone ---------- */
-
-  /*
-    Approximation :
-    ~0.5 g CO₂ / MB transféré
-  */
 
   const carbon =
     totalMB * 0.5;
 
-  /* ---------- Nombre de requêtes ---------- */
-
   const requests =
     resources.length;
-
-  /* ---------- Élément HTML ---------- */
 
   const carbonElement =
     document.getElementById("carbonValue");
 
   if (!carbonElement) return;
 
-  /* ---------- Si aucune donnée ---------- */
+  /* ---------- Fallback ---------- */
 
-  if (totalBytes === 0) {
+  if (totalBytes <= 0) {
 
-    carbonElement.innerHTML = `
-      Données indisponibles
-    `;
+    carbonElement.innerHTML =
+      "Analyse indisponible";
 
     return;
 
@@ -74,20 +188,19 @@ function calculateCarbonFootprint() {
 
 }
 
-/* ---------- Temps réel ---------- */
+/* ---------- Chargement page ---------- */
 
 window.addEventListener("load", () => {
 
-  calculateCarbonFootprint();
-
   /*
-    Recalcul périodique
+    Petit délai pour laisser
+    toutes les ressources charger
   */
 
-  setInterval(() => {
+  setTimeout(() => {
 
     calculateCarbonFootprint();
 
-  }, 2000);
+  }, 1200);
 
 });
