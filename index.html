@@ -125,14 +125,17 @@
       transition: transform 0.3s ease;
     }
     
-    .podcast-card:hover {
-      transform: translateY(-3px);
+    .podcast-card {
+      margin-top: 25px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px var(--shadow);
     }
     
     .podcast-player {
       width: 100%;
       display: block;
-      border-radius: 22px;
+      border-radius: 20px;
       background: #000;
     }
 
@@ -238,7 +241,7 @@
   <nav>
     <a href="#about">À propos</a>
     <a href="#projects">Projets</a>
-    <a href="#experience">Expérience</a>
+    <a href="#podcasts">Podcasts</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -356,6 +359,29 @@
       </div>
       
       <img src="./img/guitare-asservie.png" class="project-image">
+
+      <section id="podcast" class="card">
+
+      <h2>Podcast</h2>
+    
+      <p>
+        En savoir plus sur l’éco-conception et le projet de voilier autonome.
+      </p>
+    
+      <div class="podcast-card">
+    
+        <video class="podcast-player" controls preload="metadata"
+          poster="./img/podcast-cover.png">
+    
+          <source src="./media/podcast.mp4" type="video/mp4">
+    
+          Votre navigateur ne supporte pas la lecture vidéo.
+    
+        </video>
+    
+      </div>
+    
+    </section>
 
       <h3>Galerie</h3>
 
