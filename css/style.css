@@ -620,22 +620,20 @@ a {
   z-index: 3000;
 
   transition:
-    width 0.45s cubic-bezier(0.22,1,0.36,1),
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    all 0.45s cubic-bezier(0.22,1,0.36,1);
 }
 
-/* ---------- Déploiement ---------- */
+/* ---------- Hover ---------- */
 
-.carbon-badge:hover,
-.carbon-badge.active {
+.carbon-badge:hover {
 
   width: 360px;
 
-  transform: translateY(-2px);
-
   box-shadow:
     0 18px 40px rgba(0,0,0,0.28);
+
+  transform:
+    translateY(-2px);
 }
 
 /* ---------- Icône ---------- */
@@ -661,11 +659,12 @@ a {
 
   opacity: 0;
 
-  transform: translateX(12px);
+  transform:
+    translateX(10px);
 
   transition:
-    opacity 0.3s ease,
-    transform 0.45s cubic-bezier(0.22,1,0.36,1);
+    opacity 0.25s ease,
+    transform 0.45s ease;
 
   padding-right: 18px;
 
@@ -674,81 +673,52 @@ a {
   line-height: 1.3;
 }
 
-/* ---------- Apparition ---------- */
+/* ---------- Apparition texte ---------- */
 
-.carbon-badge:hover .carbon-content,
-.carbon-badge.active .carbon-content {
+.carbon-badge:hover .carbon-content {
 
   opacity: 1;
 
-  transform: translateX(0);
+  transform:
+    translateX(0);
 }
 
-/* ---------- Titre ---------- */
+/* ---------- Texte ---------- */
 
 .carbon-title {
 
-  font-size: 0.78rem;
+  font-size: 0.82rem;
 
   opacity: 0.65;
 
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
-
-/* ---------- Valeur ---------- */
 
 .carbon-value {
 
-  font-size: 0.88rem;
+  font-size: 0.92rem;
 
   font-weight: 600;
 
   line-height: 1.4;
 }
 
-/* ---------- Eco score ---------- */
-
 .eco-score {
 
-  margin-top: 4px;
+  margin-top: 6px;
 
-  font-size: 0.78rem;
+  font-size: 0.82rem;
 
   font-weight: 600;
 }
 
-/* ---------- Référence ---------- */
-
 .eco-reference {
 
-  margin-top: 4px;
+  margin-top: 6px;
 
-  font-size: 0.64rem;
+  font-size: 0.68rem;
 
   opacity: 0.55;
 
-  line-height: 1.2;
-}
-
-/* ---------- Footer ---------- */
-
-.site-footer {
-
-  width: 100%;
-
-  text-align: center;
-
-  padding: 20px 20px 25px;
-
-  font-size: 0.82rem;
-
-  opacity: 0.5;
-
-  letter-spacing: 0.3px;
-
-  font-weight: 400;
-
-  user-select: none;
-
-  margin-top: auto;
+  line-height: 1.3;
 }
