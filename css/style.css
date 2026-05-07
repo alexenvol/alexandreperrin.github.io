@@ -646,12 +646,10 @@ a {
 
 /* ---------- Hover ---------- */
 
-.carbon-badge:hover {
+.carbon-badge:hover,
+.carbon-badge.active {
 
-  width: 320px;
-
-  transform:
-    translateY(-2px);
+  width: 340px;
 }
 
 /* ---------- Icône ---------- */
@@ -680,7 +678,10 @@ a {
     opacity 0.35s ease,
     transform 0.35s ease;
 
-  white-space: nowrap;
+  padding-right: 20px;
+  padding-top: 2px;
+
+  white-space: normal;
 }
 
 /* ---------- Apparition ---------- */
@@ -745,7 +746,7 @@ a {
 
 .carbon-badge.active {
 
-  width: 320px;
+  width: 340px;
 }
 
 .carbon-badge.active .carbon-content {
