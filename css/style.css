@@ -52,6 +52,15 @@ body {
   justify-content: space-between;
 }
 
+.site-footer {
+
+  width: 100%;
+
+  text-align: center;
+
+  align-self: center;
+}
+
 /* ---------- Fond premium ---------- */
 
 body::before {
