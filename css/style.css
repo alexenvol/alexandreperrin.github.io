@@ -584,42 +584,6 @@ a {
   }
 }
 
-Oui, je vois exactement le problème maintenant :
-ton CSS est globalement bon, ton HTML aussi, MAIS ton texte ne s’affiche pas parce que :
-
-white-space: nowrap;
-
-empêche totalement le retour à la ligne dans la bulle carbone.
-
-Résultat :
-
-le contenu devient plus large que la bulle
-il est masqué par overflow: hidden
-tu as l’impression que “rien ne s’ouvre”
-
-Et surtout :
-ta bulle fait seulement 58px de hauteur, alors que ton contenu a besoin de plus de hauteur.
-
-Corrige UNIQUEMENT cette partie
-
-Remplace TOUT le bloc :
-
-.carbon-badge {
-
-...
-
-}
-
-jusqu’à :
-
-.eco-reference {
-
-...
-
-}
-
-par celui-ci :
-
 /* ---------- Carbon bubble ---------- */
 
 .carbon-badge {
