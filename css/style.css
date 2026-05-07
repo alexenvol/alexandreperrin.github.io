@@ -612,10 +612,10 @@ a {
   bottom: 20px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   width: 58px;
-  height: 58px;
+  min-height: 58px;
 
   overflow: hidden;
 
@@ -635,12 +635,13 @@ a {
 
   transition:
     width 0.45s cubic-bezier(0.22,1,0.36,1),
-    background 0.3s ease,
     transform 0.3s ease;
 
   z-index: 3000;
 
   cursor: pointer;
+
+  padding: 14px 0;
 }
 
 /* ---------- Hover ---------- */
