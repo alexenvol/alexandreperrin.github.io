@@ -1040,14 +1040,27 @@ a {
 
   margin-bottom: 120px;
 
-  opacity: 0;
+  opacity: 1;
 
-  transform:
-    translateY(50px);
+  transform: none;
 
   transition:
-    opacity 1s ease,
-    transform 1s ease;
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.js-enabled .timeline-section {
+
+  opacity: 0;
+
+  transform: translateY(50px);
+}
+
+.js-enabled .timeline-section.visible {
+
+  opacity: 1;
+
+  transform: translateY(0);
 }
 
 /* ---------- Reveal ---------- */
