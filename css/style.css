@@ -619,16 +619,17 @@ a {
   align-items: center;
 
   width: 58px;
-  max-width: 340px;
+  height: 58px;
 
-  min-height: 58px;
-
-  border-radius: 30px;
+  border-radius: 999px;
 
   background:
-    rgba(255,255,255,0.06);
+    rgba(255,255,255,0.08);
 
   backdrop-filter:
+    blur(16px);
+
+  -webkit-backdrop-filter:
     blur(16px);
 
   border:
@@ -637,24 +638,30 @@ a {
   box-shadow:
     0 10px 30px rgba(0,0,0,0.22);
 
+  overflow: hidden;
+
   transition:
     width 0.45s cubic-bezier(0.22,1,0.36,1),
-    transform 0.3s ease,
-    background 0.3s ease;
+    height 0.45s cubic-bezier(0.22,1,0.36,1),
+    transform 0.3s ease;
 
   z-index: 3000;
 
   cursor: pointer;
-
-  overflow: hidden;
 }
 
-/* ---------- Hover ---------- */
+/* ---------- Expansion ---------- */
 
 .carbon-badge:hover,
 .carbon-badge.active {
 
   width: 340px;
+
+  height: auto;
+
+  min-height: 58px;
+
+  border-radius: 28px;
 
   transform:
     translateY(-2px);
@@ -674,6 +681,8 @@ a {
   justify-content: center;
 
   font-size: 1.3rem;
+
+  flex-shrink: 0;
 }
 
 /* ---------- Contenu ---------- */
@@ -692,9 +701,9 @@ a {
     opacity 0.35s ease,
     transform 0.35s ease;
 
-  white-space: normal;
-
   line-height: 1.35;
+
+  white-space: normal;
 }
 
 /* ---------- Apparition ---------- */
