@@ -612,12 +612,12 @@ a {
   bottom: 20px;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   width: 58px;
-  min-height: 58px;
+  max-width: 340px;
 
-  overflow: hidden;
+  min-height: 58px;
 
   border-radius: 30px;
 
@@ -635,13 +635,121 @@ a {
 
   transition:
     width 0.45s cubic-bezier(0.22,1,0.36,1),
-    transform 0.3s ease;
+    transform 0.3s ease,
+    background 0.3s ease;
 
   z-index: 3000;
 
   cursor: pointer;
 
-  padding: 14px 0;
+  overflow: hidden;
+}
+
+/* ---------- Hover / active ---------- */
+
+.carbon-badge:hover,
+.carbon-badge.active {
+
+  width: 340px;
+
+  transform:
+    translateY(-2px);
+}
+
+/* ---------- Icône ---------- */
+
+.carbon-icon {
+
+  width: 58px;
+  min-width: 58px;
+
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.3rem;
+}
+
+/* ---------- Contenu ---------- */
+
+.carbon-content {
+
+  padding:
+    14px 18px 14px 0;
+
+  opacity: 0;
+
+  transform:
+    translateX(10px);
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+
+  white-space: normal;
+
+  line-height: 1.35;
+}
+
+/* ---------- Apparition ---------- */
+
+.carbon-badge:hover .carbon-content,
+.carbon-badge.active .carbon-content {
+
+  opacity: 1;
+
+  transform:
+    translateX(0);
+}
+
+/* ---------- Titre ---------- */
+
+.carbon-title {
+
+  font-size: 0.82rem;
+
+  opacity: 0.65;
+
+  margin-bottom: 4px;
+}
+
+/* ---------- Valeur ---------- */
+
+.carbon-value {
+
+  font-size: 0.92rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+}
+
+/* ---------- Eco score ---------- */
+
+.eco-score {
+
+  margin-top: 6px;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+/* ---------- Référence ---------- */
+
+.eco-reference {
+
+  margin-top: 6px;
+
+  font-size: 0.68rem;
+
+  opacity: 0.55;
+
+  line-height: 1.3;
+
+  max-width: 220px;
 }
 
 /* ---------- Hover ---------- */
