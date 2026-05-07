@@ -256,3 +256,35 @@ if (yearElement) {
     new Date().getFullYear();
 
 }
+
+/* ---------- Timeline reveal ---------- */
+
+const timelineSections =
+  document.querySelectorAll(".timeline-section");
+
+function revealTimeline() {
+
+  const trigger =
+    window.innerHeight * 0.88;
+
+  timelineSections.forEach((section) => {
+
+    const top =
+      section.getBoundingClientRect().top;
+
+    if (top < trigger) {
+
+      section.classList.add("visible");
+
+    }
+
+  });
+
+}
+
+window.addEventListener(
+  "scroll",
+  revealTimeline
+);
+
+revealTimeline();
