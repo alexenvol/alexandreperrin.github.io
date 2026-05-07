@@ -739,3 +739,18 @@ a {
 
   white-space: normal;
 }
+
+/* ---------- Carbon active ---------- */
+
+.carbon-badge.active {
+
+  width: 320px;
+}
+
+.carbon-badge.active .carbon-content {
+
+  opacity: 1;
+
+  transform:
+    translateX(0);
+}
