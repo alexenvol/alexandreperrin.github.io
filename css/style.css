@@ -585,7 +585,7 @@ a {
 
   display: flex;
 
-  align-items: flex-start;
+  align-items: center;
 
   width: 58px;
 
@@ -670,7 +670,7 @@ a {
 
   line-height: 1.35;
 
-  white-space: nowrap;
+  white-space: normal;
 
   min-width: 240px;
 }
