@@ -221,8 +221,8 @@ carbonElement.innerHTML = `
   </div>
 
   <div class="eco-reference">
-    Référence inspirée des pratiques
-    européennes d’éco-conception web
+    Référence inspirée des pratiques européennes d’éco-conception web.<br>
+    Estimation basée sur les ressources chargées par cette page.
   </div>
 
 `;
