@@ -49,7 +49,7 @@ body {
 
   flex-direction: column;
 
-  padding-bottom: 0;
+  justify-content: space-between;
 }
 
 /* ---------- Fond premium ---------- */
