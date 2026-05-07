@@ -137,7 +137,7 @@ nav a:hover {
 
   padding: 40px;
 
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 /* ---------- Titres ---------- */
@@ -771,8 +771,6 @@ a {
 
   text-align: center;
 
-  margin-top: 40px;
-
   padding:
     20px 20px 25px;
 
@@ -785,4 +783,6 @@ a {
   font-weight: 400;
 
   user-select: none;
+
+  flex-shrink: 0;
 }
