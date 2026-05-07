@@ -98,12 +98,16 @@ nav a {
 
   font-weight: bold;
 
-  transition: transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 nav a:hover {
 
   transform: translateY(-2px);
+
+  opacity: 0.85;
 }
 
 /* ---------- Layout ---------- */
@@ -179,7 +183,8 @@ ul {
 
 .card {
 
-  background: var(--card-bg);
+  background:
+    rgba(255,255,255,0.04);
 
   padding: 35px;
 
@@ -190,14 +195,14 @@ ul {
   border:
     1px solid rgba(255,255,255,0.04);
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 
   box-shadow:
     0 6px 20px var(--shadow);
 
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 
   animation: fadeUp 1s ease;
 }
@@ -207,7 +212,7 @@ ul {
   transform: translateY(-5px);
 
   box-shadow:
-    0 12px 30px var(--shadow);
+    0 14px 35px rgba(0,0,0,0.18);
 }
 
 /* ---------- Images ---------- */
@@ -336,12 +341,18 @@ ul {
   box-shadow:
     0 4px 12px var(--shadow);
 
-  transition: transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+  z-index: 4000;
 }
 
 .darkmode-button:hover {
 
   transform: scale(1.05);
+
+  opacity: 0.9;
 }
 
 /* ---------- Liens ---------- */
@@ -482,7 +493,6 @@ a {
 
     flex-wrap: wrap;
   }
-
 }
 
 /* ---------- Project sections ---------- */
@@ -500,6 +510,23 @@ a {
   margin-bottom: 140px;
 
   min-height: 75vh;
+
+  opacity: 0;
+
+  transform:
+    translateY(80px);
+
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
+}
+
+.project-section.visible {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
 }
 
 /* ---------- Alternance ---------- */
@@ -534,7 +561,7 @@ a {
   max-width: 550px;
 }
 
-/* ---------- Images ---------- */
+/* ---------- Images projets ---------- */
 
 .project-visual {
 
@@ -563,29 +590,7 @@ a {
     0 30px 80px rgba(0,0,0,0.35);
 }
 
-/* ---------- Scroll reveal ---------- */
-
-.project-section {
-
-  opacity: 0;
-
-  transform:
-    translateY(80px);
-
-  transition:
-    opacity 1.2s ease,
-    transform 1.2s ease;
-}
-
-.project-section.visible {
-
-  opacity: 1;
-
-  transform:
-    translateY(0);
-}
-
-/* ---------- Responsive ---------- */
+/* ---------- Responsive projets ---------- */
 
 @media (max-width: 900px) {
 
@@ -599,7 +604,6 @@ a {
 
     font-size: 2rem;
   }
-
 }
 
 /* ---------- Carbon bubble ---------- */
@@ -645,7 +649,7 @@ a {
   overflow: hidden;
 }
 
-/* ---------- Hover / active ---------- */
+/* ---------- Hover ---------- */
 
 .carbon-badge:hover,
 .carbon-badge.active {
@@ -750,117 +754,4 @@ a {
   line-height: 1.3;
 
   max-width: 220px;
-}
-
-/* ---------- Hover ---------- */
-
-.carbon-badge:hover,
-.carbon-badge.active {
-
-  width: 340px;
-}
-
-/* ---------- Icône ---------- */
-
-.carbon-icon {
-
-  min-width: 58px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 1.3rem;
-}
-
-/* ---------- Contenu ---------- */
-
-.carbon-content {
-
-  opacity: 0;
-
-  transform:
-    translateX(10px);
-
-  transition:
-    opacity 0.35s ease,
-    transform 0.35s ease;
-
-  padding-right: 20px;
-  padding-top: 2px;
-
-  white-space: normal;
-}
-
-/* ---------- Apparition ---------- */
-
-.carbon-badge:hover .carbon-content {
-
-  opacity: 1;
-
-  transform:
-    translateX(0);
-}
-
-/* ---------- Titre ---------- */
-
-.carbon-title {
-
-  font-size: 0.82rem;
-
-  opacity: 0.65;
-}
-
-/* ---------- Valeur ---------- */
-
-.carbon-value {
-
-  font-size: 0.92rem;
-
-  font-weight: 600;
-
-  line-height: 1.4;
-}
-
-/* ---------- Eco score ---------- */
-
-.eco-score {
-
-  margin-top: 4px;
-
-  font-size: 0.82rem;
-
-  font-weight: 600;
-}
-
-/* ---------- Référence ---------- */
-
-.eco-reference {
-
-  margin-top: 4px;
-
-  font-size: 0.68rem;
-
-  opacity: 0.55;
-
-  line-height: 1.25;
-
-  max-width: 220px;
-
-  white-space: normal;
-}
-
-/* ---------- Carbon active ---------- */
-
-.carbon-badge.active {
-
-  width: 340px;
-}
-
-.carbon-badge.active .carbon-content {
-
-  opacity: 1;
-
-  transform:
-    translateX(0);
 }
