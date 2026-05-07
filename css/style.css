@@ -729,7 +729,14 @@ a {
 
 /* ---------- Contenu ---------- */
 
+/* ---------- Contenu ---------- */
+
 .carbon-content {
+
+  position: absolute;
+
+  left: 58px;
+  top: 0;
 
   width: 270px;
 
@@ -755,7 +762,7 @@ a {
 /* ---------- Apparition ---------- */
 
 .carbon-wrapper:hover .carbon-content {
-
+  
   opacity: 1;
 
   transform:
@@ -862,4 +869,26 @@ a {
 
   box-shadow:
     0 14px 30px rgba(0,0,0,0.22);
+}
+
+/* ---------- Zone hover ---------- */
+
+.carbon-wrapper {
+
+  position: fixed;
+
+  left: 20px;
+  bottom: 20px;
+
+  width: 58px;
+  height: 58px;
+
+  z-index: 3000;
+}
+
+/* ---------- Maintien ouverture ---------- */
+
+.carbon-badge:hover {
+
+  overflow: visible;
 }
