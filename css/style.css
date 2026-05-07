@@ -54,20 +54,14 @@ body {
 
 .site-footer {
 
-  width: 100%;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  text-align: center;
-
   margin-top: auto;
+
+  width: 100%;
 
   padding:
     20px 20px 25px;
+
+  text-align: center;
 
   font-size: 0.82rem;
 
@@ -78,8 +72,6 @@ body {
   font-weight: 400;
 
   user-select: none;
-
-  flex-shrink: 0;
 }
 
 /* ---------- Fond premium ---------- */
