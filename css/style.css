@@ -610,16 +610,14 @@ a {
   position: fixed;
 
   left: 20px;
-
   bottom: 20px;
 
   width: 58px;
-
   height: 58px;
 
   display: flex;
 
-  align-items: flex-start;
+  align-items: center;
 
   border-radius: 999px;
 
@@ -627,7 +625,6 @@ a {
     rgba(255,255,255,0.08);
 
   backdrop-filter: blur(18px);
-
   -webkit-backdrop-filter: blur(18px);
 
   border:
@@ -642,12 +639,17 @@ a {
 
   z-index: 3000;
 
+  will-change:
+    width,
+    height,
+    transform;
+
   transition:
-    width 0.45s cubic-bezier(0.22,1,0.36,1),
-    height 0.45s cubic-bezier(0.22,1,0.36,1),
-    border-radius 0.35s ease,
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    width 0.38s cubic-bezier(0.22,1,0.36,1),
+    height 0.38s cubic-bezier(0.22,1,0.36,1),
+    border-radius 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* ---------- Hover ---------- */
@@ -656,7 +658,7 @@ a {
 
   width: 360px;
 
-  height: 175px;
+  height: 165px;
 
   border-radius: 28px;
 
@@ -672,15 +674,12 @@ a {
 .carbon-icon {
 
   width: 58px;
-
   min-width: 58px;
-
   height: 58px;
 
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   font-size: 1.3rem;
@@ -698,8 +697,6 @@ a {
 
   justify-content: center;
 
-  height: 100%;
-
   width: 270px;
 
   padding:
@@ -708,11 +705,13 @@ a {
   opacity: 0;
 
   transform:
-    translateX(14px);
+    translateX(8px);
+
+  pointer-events: none;
 
   transition:
-    opacity 0.25s ease,
-    transform 0.45s cubic-bezier(0.22,1,0.36,1);
+    opacity 0.22s ease,
+    transform 0.38s cubic-bezier(0.22,1,0.36,1);
 
   white-space: normal;
 
@@ -727,70 +726,4 @@ a {
 
   transform:
     translateX(0);
-}
-
-/* ---------- Texte ---------- */
-
-.carbon-title {
-
-  font-size: 0.82rem;
-
-  opacity: 0.65;
-
-  margin-bottom: 4px;
-}
-
-.carbon-value {
-
-  font-size: 0.92rem;
-
-  font-weight: 600;
-
-  line-height: 1.45;
-}
-
-.eco-score {
-
-  margin-top: 6px;
-
-  font-size: 0.82rem;
-
-  font-weight: 600;
-}
-
-.eco-reference {
-
-  margin-top: 6px;
-
-  font-size: 0.68rem;
-
-  opacity: 0.55;
-
-  line-height: 1.3;
-}
-
-/* ---------- Footer ---------- */
-
-.site-footer {
-
-  width: 100%;
-
-  text-align: center;
-
-  padding:
-    20px 20px 25px;
-
-  font-size: 0.82rem;
-
-  opacity: 0.5;
-
-  letter-spacing: 0.3px;
-
-  font-weight: 400;
-
-  user-select: none;
-
-  flex-shrink: 0;
-
-  margin-top: auto;
 }
