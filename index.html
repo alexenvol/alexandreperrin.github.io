@@ -4,20 +4,26 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
   <title>Alexandre Perrin</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon"
+    type="image/x-icon"
+    href="favicon.ico">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
 
   <link rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -25,81 +31,208 @@
 
 <body class="dark-mode">
 
+  <!-- Navigation -->
+
   <nav>
+
     <a href="index.html">À propos</a>
     <a href="projects.html">Projets</a>
     <a href="podcast.html">Podcast</a>
     <a href="contact.html">Contact</a>
+
   </nav>
 
-  <div class="container">
+  <!-- HERO -->
 
-    <h1>Alexandre Perrin</h1>
+  <section class="hero">
 
-    <img src="img/profile.png" class="profile-image" alt="Photo de profil">
+    <div class="hero-content">
 
-    <div class="subtitle">
-      Élève-ingénieur — Conception mécanique & Systèmes embarqués
+      <h1>
+        Alexandre Perrin
+      </h1>
+
+      <p class="hero-subtitle">
+
+        Élève-ingénieur ENIB<br>
+
+        Conception mécanique • Systèmes embarqués • Aéronautique
+
+      </p>
+
     </div>
 
-    <section class="card">
+  </section>
 
-      <h2>À propos</h2>
+  <!-- TIMELINE -->
 
-      <p>
-        Élève-ingénieur en dernière année à l’ENIB, passionné par l’aéronautique,
-        les systèmes embarqués, la conception mécanique, le prototypage rapide
-        et l’innovation technologique.
-      </p>
+  <main class="timeline">
+
+    <!-- ENIB -->
+
+    <section class="timeline-section">
+
+      <div class="timeline-dot"></div>
+
+      <div class="timeline-content">
+
+        <div class="timeline-year">
+          2021 — Aujourd’hui
+        </div>
+
+        <h2>
+          ENIB
+        </h2>
+
+        <p>
+
+          Formation d’ingénieur généraliste orientée mécatronique,
+          systèmes embarqués, électronique et conception mécanique.
+
+        </p>
+
+      </div>
 
     </section>
 
-  </div>
+    <!-- Allemagne -->
 
-  <button class="darkmode-button" onclick="toggleDarkMode()" id="themeButton">
-    ☀️ Mode jour
-  </button>
+    <section class="timeline-section">
 
-  <!-- Footer premium -->
+      <div class="timeline-dot"></div>
 
-<footer class="site-footer">
+      <div class="timeline-content">
 
-  <div class="footer-blur"></div>
+        <div class="timeline-year">
+          2023
+        </div>
 
-  <div class="footer-content">
+        <h2>
+          Expérience internationale
+        </h2>
 
-    © <span id="year"></span>
-    Alexandre Perrin — Tous droits réservés
+        <p>
 
-  </div>
+          Travail technique en environnement industriel allemand,
+          développement de l’autonomie et adaptation multiculturelle.
+
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ArianeGroup -->
+
+    <section class="timeline-section">
+
+      <div class="timeline-dot"></div>
+
+      <div class="timeline-content">
+
+        <div class="timeline-year">
+          2025
+        </div>
+
+        <h2>
+          ArianeGroup
+        </h2>
+
+        <p>
+
+          Stage dans le domaine spatial :
+          mécanique, prototypage, essais techniques
+          et environnement haute technologie.
+
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- Vision -->
+
+    <section class="timeline-section">
+
+      <div class="timeline-dot"></div>
+
+      <div class="timeline-content">
+
+        <div class="timeline-year">
+          Aujourd’hui
+        </div>
+
+        <h2>
+          Vision
+        </h2>
+
+        <p>
+
+          Passionné par les systèmes complexes,
+          l’innovation industrielle,
+          l’aéronautique et les technologies de pointe.
+
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+
+    <div class="footer-blur"></div>
+
+    <div class="footer-content">
+
+      © <span id="year"></span>
+      Alexandre Perrin — Tous droits réservés
+
+    </div>
 
   </footer>
-  
+
+  <!-- Bouton thème -->
+
+  <button
+    class="darkmode-button"
+    onclick="toggleDarkMode()"
+    id="themeButton">
+
+    ☀️ Mode jour
+
+  </button>
+
   <!-- Badge carbone -->
-  
+
   <div class="carbon-wrapper">
-  
+
     <div class="carbon-badge" id="carbonBadge">
-  
+
       <div class="carbon-icon">
         🌱
       </div>
-  
+
       <div class="carbon-content">
-  
+
         <div class="carbon-title">
-          Impact estimé
+          Impact estimé du site
         </div>
-  
+
         <div class="carbon-value" id="carbonValue">
           Calcul...
         </div>
-  
+
       </div>
-  
+
     </div>
-  
+
   </div>
+
+  <!-- JS -->
 
   <script src="js/theme.js"></script>
 
