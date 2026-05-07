@@ -52,13 +52,36 @@ body {
   justify-content: space-between;
 }
 
+/* ---------- Footer ---------- */
+
 .site-footer {
 
   width: 100%;
 
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
   text-align: center;
 
-  align-self: center;
+  margin-top: auto;
+
+  padding:
+    20px 20px 25px;
+
+  font-size: 0.82rem;
+
+  opacity: 0.5;
+
+  letter-spacing: 0.3px;
+
+  font-weight: 400;
+
+  user-select: none;
+
+  flex-shrink: 0;
 }
 
 /* ---------- Fond premium ---------- */
