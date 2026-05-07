@@ -774,3 +774,12 @@ a {
 
   max-width: 220px;
 }
+
+/* ---------- Smooth rendering ---------- */
+
+* {
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+}
