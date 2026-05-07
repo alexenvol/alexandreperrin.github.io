@@ -783,3 +783,23 @@ a {
 
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+
+  text-align: center;
+
+  padding:
+    40px 20px 30px;
+
+  font-size: 0.82rem;
+
+  opacity: 0.5;
+
+  letter-spacing: 0.3px;
+
+  font-weight: 400;
+
+  user-select: none;
+}
