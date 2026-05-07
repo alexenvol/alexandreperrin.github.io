@@ -246,21 +246,6 @@ window.addEventListener("load", () => {
 
 });
 
-/* ---------- Carbon bubble interaction ---------- */
-
-const carbonBadge =
-  document.getElementById("carbonBadge");
-
-if (carbonBadge) {
-
-  carbonBadge.addEventListener("click", () => {
-
-    carbonBadge.classList.toggle("active");
-
-  });
-
-}
-
 /* ---------- Copyright year ---------- */
 
 const yearElement =
