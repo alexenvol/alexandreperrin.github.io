@@ -603,14 +603,30 @@ a {
   }
 }
 
-/* ---------- Carbon bubble ---------- */
+/* ---------- Zone hover fixe ---------- */
 
-.carbon-badge {
+.carbon-wrapper {
 
   position: fixed;
 
   left: 20px;
   bottom: 20px;
+
+  width: 360px;
+
+  height: 180px;
+
+  z-index: 3000;
+}
+
+/* ---------- Bubble ---------- */
+
+.carbon-badge {
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
 
   width: 58px;
   height: 58px;
@@ -618,6 +634,8 @@ a {
   display: flex;
 
   align-items: center;
+
+  overflow: hidden;
 
   border-radius: 999px;
 
@@ -633,28 +651,17 @@ a {
   box-shadow:
     0 10px 30px rgba(0,0,0,0.22);
 
-  overflow: hidden;
-
-  cursor: pointer;
-
-  z-index: 3000;
-
-  will-change:
-    width,
-    height,
-    transform;
-
   transition:
     width 0.38s cubic-bezier(0.22,1,0.36,1),
     height 0.38s cubic-bezier(0.22,1,0.36,1),
     border-radius 0.3s ease,
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* ---------- Hover ---------- */
+/* ---------- Hover stable ---------- */
 
-.carbon-badge:hover {
+.carbon-wrapper:hover .carbon-badge {
 
   width: 360px;
 
@@ -675,6 +682,7 @@ a {
 
   width: 58px;
   min-width: 58px;
+
   height: 58px;
 
   display: flex;
@@ -691,12 +699,6 @@ a {
 
 .carbon-content {
 
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
   width: 270px;
 
   padding:
@@ -705,25 +707,65 @@ a {
   opacity: 0;
 
   transform:
-    translateX(8px);
-
-  pointer-events: none;
+    translateX(10px);
 
   transition:
-    opacity 0.22s ease,
+    opacity 0.25s ease,
     transform 0.38s cubic-bezier(0.22,1,0.36,1);
 
   white-space: normal;
 
   line-height: 1.4;
+
+  pointer-events: none;
 }
 
 /* ---------- Apparition ---------- */
 
-.carbon-badge:hover .carbon-content {
+.carbon-wrapper:hover .carbon-content {
 
   opacity: 1;
 
   transform:
     translateX(0);
+}
+
+/* ---------- Texte ---------- */
+
+.carbon-title {
+
+  font-size: 0.82rem;
+
+  opacity: 0.65;
+
+  margin-bottom: 4px;
+}
+
+.carbon-value {
+
+  font-size: 0.92rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+}
+
+.eco-score {
+
+  margin-top: 6px;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+.eco-reference {
+
+  margin-top: 6px;
+
+  font-size: 0.68rem;
+
+  opacity: 0.55;
+
+  line-height: 1.3;
 }
