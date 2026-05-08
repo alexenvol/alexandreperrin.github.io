@@ -1,38 +1,64 @@
-/* ---------- JS activé ---------- */
+/* ===================================================== */
+/* JS ACTIVÉ */
+/* ===================================================== */
 
 document.body.classList.add("js-enabled");
 
-/* ---------- Bouton thème ---------- */
+/* ===================================================== */
+/* THEME */
+/* ===================================================== */
 
 const button =
   document.getElementById("themeButton") || null;
 
-/* ---------- Chargement du thème ---------- */
-
 const savedTheme =
   localStorage.getItem("theme");
 
-/* ---------- Application du thème ---------- */
+/* ---------- Apply saved theme ---------- */
 
 if (savedTheme === "light") {
 
   document.body.classList.remove("dark-mode");
 
-  if (button) {
-    button.innerHTML = "🌙 Mode sombre";
-  }
-
 } else {
 
   document.body.classList.add("dark-mode");
 
-  if (button) {
-    button.innerHTML = "☀️ Mode jour";
+}
+
+/* ---------- Update theme button ---------- */
+
+function updateThemeButton() {
+
+  if (!button) return;
+
+  const lang =
+    localStorage.getItem("language") || "fr";
+
+  const isDark =
+    document.body.classList.contains("dark-mode");
+
+  if (lang === "fr") {
+
+    button.innerHTML =
+      isDark
+        ? "☀️ Mode jour"
+        : "🌙 Mode sombre";
+
+  } else {
+
+    button.innerHTML =
+      isDark
+        ? "☀️ Light mode"
+        : "🌙 Dark mode";
+
   }
 
 }
 
-/* ---------- Toggle thème ---------- */
+updateThemeButton();
+
+/* ---------- Toggle theme ---------- */
 
 function toggleDarkMode() {
 
@@ -41,27 +67,18 @@ function toggleDarkMode() {
   const isDark =
     document.body.classList.contains("dark-mode");
 
-  if (isDark) {
+  localStorage.setItem(
+    "theme",
+    isDark ? "dark" : "light"
+  );
 
-    localStorage.setItem("theme", "dark");
-
-    if (button) {
-      button.innerHTML = "☀️ Mode jour";
-    }
-
-  } else {
-
-    localStorage.setItem("theme", "light");
-
-    if (button) {
-      button.innerHTML = "🌙 Mode sombre";
-    }
-
-  }
+  updateThemeButton();
 
 }
 
-/* ---------- Reveal animations ---------- */
+/* ===================================================== */
+/* REVEAL PROJECTS */
+/* ===================================================== */
 
 const projectSections =
   document.querySelectorAll(".project-section");
@@ -93,7 +110,9 @@ window.addEventListener(
 
 revealProjects();
 
-/* ---------- Lightbox images ---------- */
+/* ===================================================== */
+/* LIGHTBOX */
+/* ===================================================== */
 
 const images =
   document.querySelectorAll(
@@ -134,7 +153,9 @@ if (images.length > 0) {
 
 }
 
-/* ---------- Eco impact estimation ---------- */
+/* ===================================================== */
+/* ECO IMPACT */
+/* ===================================================== */
 
 function calculateCarbonFootprint() {
 
@@ -168,74 +189,98 @@ function calculateCarbonFootprint() {
 
   if (!carbonElement) return;
 
+  const lang =
+    localStorage.getItem("language") || "fr";
+
   /* ---------- Fallback ---------- */
 
   if (totalBytes <= 0) {
 
     carbonElement.innerHTML =
-      "Analyse indisponible";
+      lang === "en"
+        ? "Analysis unavailable"
+        : "Analyse indisponible";
 
     return;
 
   }
 
-  /* ---------- Affichage ---------- */
+  /* ---------- Eco score ---------- */
 
-/* ---------- Eco score ---------- */
+  let ecoScore = "";
+  let ecoClass = "";
 
-let ecoScore = "";
-let ecoClass = "";
+  if (carbon < 0.10) {
 
-if (carbon < 0.10) {
+    ecoScore =
+      lang === "en"
+        ? "🟢 Excellent"
+        : "🟢 Excellent";
 
-  ecoScore = "🟢 Excellent";
-  ecoClass = "excellent";
+    ecoClass = "excellent";
 
-} else if (carbon < 0.50) {
+  } else if (carbon < 0.50) {
 
-  ecoScore = "🟡 Correct";
-  ecoClass = "correct";
+    ecoScore =
+      lang === "en"
+        ? "🟡 Good"
+        : "🟡 Correct";
 
-} else if (carbon < 1.00) {
+    ecoClass = "correct";
 
-  ecoScore = "🟠 Moyen";
-  ecoClass = "medium";
+  } else if (carbon < 1.00) {
 
-} else {
+    ecoScore =
+      lang === "en"
+        ? "🟠 Average"
+        : "🟠 Moyen";
 
-  ecoScore = "🔴 Élevé";
-  ecoClass = "bad";
+    ecoClass = "medium";
+
+  } else {
+
+    ecoScore =
+      lang === "en"
+        ? "🔴 High"
+        : "🔴 Élevé";
+
+    ecoClass = "bad";
+
+  }
+
+  /* ---------- Display ---------- */
+
+  carbonElement.innerHTML = `
+
+    ${carbon.toFixed(2)} g CO₂ / visit<br>
+
+    ${totalMB.toFixed(2)} MB • ${requests} requests
+
+    <div class="eco-score ${ecoClass}">
+      ${ecoScore}
+    </div>
+
+    <div class="eco-reference">
+
+      ${
+        lang === "en"
+
+          ? "Reference inspired by European eco-design practices. Estimation based on resources loaded by this page."
+
+          : "Référence inspirée des pratiques européennes d’éco-conception web. Estimation basée sur les ressources chargées par cette page."
+      }
+
+    </div>
+
+  `;
 
 }
 
-/* ---------- Affichage ---------- */
-
-carbonElement.innerHTML = `
-
-  ${carbon.toFixed(2)} g CO₂ / visite<br>
-
-  ${totalMB.toFixed(2)} MB • ${requests} requêtes
-
-  <div class="eco-score ${ecoClass}">
-    ${ecoScore}
-  </div>
-
-  <div class="eco-reference">
-    Référence inspirée des pratiques européennes d’éco-conception web. Estimation basée sur les ressources chargées par cette page.
-  </div>
-
-`;
-
-}
-
-/* ---------- Chargement page ---------- */
+/* ===================================================== */
+/* PAGE LOAD */
+/* ===================================================== */
 
 window.addEventListener("load", () => {
-
-  /*
-    Petit délai pour laisser
-    toutes les ressources charger
-  */
 
   setTimeout(() => {
 
@@ -245,7 +290,9 @@ window.addEventListener("load", () => {
 
 });
 
-/* ---------- Copyright year ---------- */
+/* ===================================================== */
+/* COPYRIGHT YEAR */
+/* ===================================================== */
 
 const yearElement =
   document.getElementById("year");
@@ -257,7 +304,9 @@ if (yearElement) {
 
 }
 
-/* ---------- Timeline reveal ---------- */
+/* ===================================================== */
+/* TIMELINE REVEAL */
+/* ===================================================== */
 
 const timelineSections =
   document.querySelectorAll(".timeline-section");
