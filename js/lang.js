@@ -292,6 +292,12 @@ function toggleLanguage() {
 
   applyLanguage(currentLang);
 
+  updateThemeButton();
+
+  if (typeof calculateCarbonFootprint === "function") {
+    calculateCarbonFootprint();
+}
+
 }
 
 document.addEventListener(
