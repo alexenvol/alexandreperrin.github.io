@@ -4,42 +4,78 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Podcast — Alexandre Perrin</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon"
+        type="image/x-icon"
+        href="favicon.ico">
 
-  <link rel="stylesheet" href="css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+        href="css/style.css">
 
   <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
 </head>
 
 <body class="dark-mode">
 
+  <!-- Navigation -->
+
   <nav>
-    <a href="index.html">À propos</a>
-    <a href="projects.html">Projets</a>
-    <a href="podcast.html">Podcast</a>
-    <a href="contact.html">Contact</a>
+
+    <a href="index.html"
+       data-lang="nav_about">
+      À propos
+    </a>
+
+    <a href="projects.html"
+       data-lang="nav_projects">
+      Projets
+    </a>
+
+    <a href="podcast.html"
+       data-lang="nav_podcast">
+      Podcast
+    </a>
+
+    <a href="contact.html"
+       data-lang="nav_contact">
+      Contact
+    </a>
+
+    <button id="langButton"
+            class="lang-button">
+      EN
+    </button>
+
   </nav>
+
+  <!-- Container -->
 
   <div class="container">
 
     <section class="card">
 
-      <h2>Podcast</h2>
+      <h2 data-lang="podcast_title">
+        Podcast
+      </h2>
 
-      <p>
+      <p data-lang="podcast_text">
+
         Vous souhaitez en savoir plus sur l’éco-conception à l'ENIB ? C'est par ici !
+
       </p>
 
       <div class="podcast-card">
@@ -50,7 +86,8 @@
           preload="metadata"
           poster="img/logo_frequencemutine.jpg">
 
-          <source src="media/Podcast.mp4" type="video/mp4">
+          <source src="media/Podcast.mp4"
+                  type="video/mp4">
 
           Votre navigateur ne supporte pas la lecture vidéo.
 
@@ -62,30 +99,38 @@
 
   </div>
 
-  <button class="darkmode-button" onclick="toggleDarkMode()" id="themeButton">
+  <!-- Bouton dark mode -->
+
+  <button class="darkmode-button"
+          onclick="toggleDarkMode()"
+          id="themeButton">
+
     ☀️ Mode jour
+
   </button>
 
-   <!-- Footer premium -->
+  <!-- Footer premium -->
 
   <footer class="site-footer">
   
     <div class="footer-blur"></div>
   
-    <div class="footer-content">
+    <div class="footer-content"
+         data-lang="footer_text">
   
       © <span id="year"></span>
       Alexandre Perrin — Tous droits réservés
   
     </div>
   
-    </footer>
+  </footer>
 
-    <!-- Badge carbone -->
+  <!-- Badge carbone -->
 
   <div class="carbon-wrapper">
 
-    <div class="carbon-badge" id="carbonBadge">
+    <div class="carbon-badge"
+         id="carbonBadge">
 
       <div class="carbon-icon">
         🌱
@@ -93,12 +138,19 @@
 
       <div class="carbon-content">
 
-        <div class="carbon-title">
+        <div class="carbon-title"
+             data-lang="carbon_title">
+
           Impact estimé
+
         </div>
 
-        <div class="carbon-value" id="carbonValue">
+        <div class="carbon-value"
+             id="carbonValue"
+             data-lang="carbon_loading">
+
           Calcul...
+
         </div>
 
       </div>
@@ -107,7 +159,10 @@
 
   </div>
 
+  <!-- JS -->
+
   <script src="js/theme.js"></script>
+  <script src="js/lang.js"></script>
 
 </body>
 
