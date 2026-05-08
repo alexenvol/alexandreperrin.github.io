@@ -1157,3 +1157,31 @@ a {
     left: 14px;
   }
 }
+
+.lang-button {
+
+  border: none;
+
+  background: rgba(255,255,255,0.08);
+
+  color: var(--accent);
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.lang-button:hover {
+
+  transform: translateY(-2px);
+
+  opacity: 0.85;
+}
