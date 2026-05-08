@@ -36,10 +36,30 @@
 
   <nav>
 
-    <a href="index.html">À propos</a>
-    <a href="projects.html">Projets</a>
-    <a href="podcast.html">Podcast</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html"
+       data-lang="nav_about">
+      À propos
+    </a>
+
+    <a href="projects.html"
+       data-lang="nav_projects">
+      Projets
+    </a>
+
+    <a href="podcast.html"
+       data-lang="nav_podcast">
+      Podcast
+    </a>
+
+    <a href="contact.html"
+       data-lang="nav_contact">
+      Contact
+    </a>
+
+    <button id="langButton"
+            class="lang-button">
+      EN
+    </button>
 
   </nav>
 
@@ -49,9 +69,12 @@
 
     <!-- Titre -->
 
-    <h1>Projets</h1>
+    <h1 data-lang="projects_title">
+      Projets
+    </h1>
 
-    <div class="subtitle">
+    <div class="subtitle"
+         data-lang="projects_subtitle">
 
       Conception mécanique, systèmes embarqués,
       automatisme et prototypage.
@@ -64,18 +87,28 @@
 
       <div class="project-content">
 
-        <h3>Projet LEGO sous CATIA</h3>
+        <h3 data-lang="lego_title">
+          Projet LEGO sous CATIA
+        </h3>
 
-        <p>
+        <p data-lang="lego_text">
           Projet personnel de modélisation
           et d’assemblage LEGO sous CATIA V5.
         </p>
 
         <ul>
 
-          <li>Modélisation 3D</li>
-          <li>Assemblages complexes</li>
-          <li>Contraintes modulaires</li>
+          <li data-lang="lego_li_1">
+            Modélisation 3D
+          </li>
+
+          <li data-lang="lego_li_2">
+            Assemblages complexes
+          </li>
+
+          <li data-lang="lego_li_3">
+            Contraintes modulaires
+          </li>
 
         </ul>
 
@@ -97,18 +130,28 @@
 
       <div class="project-content">
 
-        <h3>Mallette CAO paramétrique</h3>
+        <h3 data-lang="mallette_title">
+          Mallette CAO paramétrique
+        </h3>
 
-        <p>
+        <p data-lang="mallette_text">
           Conception modulaire sous CATIA V5
           basée sur le paramétrage avancé.
         </p>
 
         <ul>
 
-          <li>Architecture évolutive</li>
-          <li>Création automatique de variantes</li>
-          <li>Conception paramétrique</li>
+          <li data-lang="mallette_li_1">
+            Architecture évolutive
+          </li>
+
+          <li data-lang="mallette_li_2">
+            Création automatique de variantes
+          </li>
+
+          <li data-lang="mallette_li_3">
+            Conception paramétrique
+          </li>
 
         </ul>
 
@@ -130,9 +173,11 @@
 
       <div class="project-content">
 
-        <h3>Voilier autonome</h3>
+        <h3 data-lang="sailboat_title">
+          Voilier autonome
+        </h3>
 
-        <p>
+        <p data-lang="sailboat_text">
           Développement d’un système autonome
           mêlant électronique embarquée,
           mécanique et navigation.
@@ -140,10 +185,21 @@
 
         <ul>
 
-          <li>Systèmes embarqués</li>
-          <li>Asservissement</li>
-          <li>Impression 3D</li>
-          <li>Capteurs et actionneurs</li>
+          <li data-lang="sailboat_li_1">
+            Systèmes embarqués
+          </li>
+
+          <li data-lang="sailboat_li_2">
+            Asservissement
+          </li>
+
+          <li data-lang="sailboat_li_3">
+            Impression 3D
+          </li>
+
+          <li data-lang="sailboat_li_4">
+            Capteurs et actionneurs
+          </li>
 
         </ul>
 
@@ -165,9 +221,11 @@
 
       <div class="project-content">
 
-        <h3>Guitare asservie</h3>
+        <h3 data-lang="guitar_title">
+          Guitare asservie
+        </h3>
 
-        <p>
+        <p data-lang="guitar_text">
           Système mécatronique STM32 permettant
           l’asservissement temps réel
           d’un instrument automatisé.
@@ -175,9 +233,17 @@
 
         <ul>
 
-          <li>Programmation STM32</li>
-          <li>PWM et PID</li>
-          <li>Boucle de contrôle temps réel</li>
+          <li data-lang="guitar_li_1">
+            Programmation STM32
+          </li>
+
+          <li data-lang="guitar_li_2">
+            PWM et PID
+          </li>
+
+          <li data-lang="guitar_li_3">
+            Boucle de contrôle temps réel
+          </li>
 
         </ul>
 
@@ -205,50 +271,60 @@
 
   </button>
 
-   <!-- Footer premium -->
+  <!-- Footer premium -->
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     
-      <div class="footer-blur"></div>
+    <div class="footer-blur"></div>
     
-      <div class="footer-content">
+    <div class="footer-content"
+         data-lang="footer_text">
     
-        © <span id="year"></span>
-        Alexandre Perrin — Tous droits réservés
+      © <span id="year"></span>
+      Alexandre Perrin — Tous droits réservés
     
+    </div>
+    
+  </footer>
+
+  <!-- Badge carbone -->
+
+  <div class="carbon-wrapper">
+  
+    <div class="carbon-badge"
+         id="carbonBadge">
+  
+      <div class="carbon-icon">
+        🌱
       </div>
-    
-      </footer>
-
-    <!-- Badge carbone -->
-
-    <div class="carbon-wrapper">
   
-      <div class="carbon-badge" id="carbonBadge">
+      <div class="carbon-content">
   
-        <div class="carbon-icon">
-          🌱
+        <div class="carbon-title"
+             data-lang="carbon_title">
+
+          Impact estimé
+
         </div>
   
-        <div class="carbon-content">
-  
-          <div class="carbon-title">
-            Impact estimé
-          </div>
-  
-          <div class="carbon-value" id="carbonValue">
-            Calcul...
-          </div>
-  
+        <div class="carbon-value"
+             id="carbonValue"
+             data-lang="carbon_loading">
+
+          Calcul...
+
         </div>
   
       </div>
   
     </div>
+  
+  </div>
 
   <!-- JS -->
 
   <script src="js/theme.js"></script>
+  <script src="js/lang.js"></script>
 
 </body>
 
