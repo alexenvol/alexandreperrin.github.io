@@ -42,10 +42,30 @@
 
   <nav>
 
-    <a href="index.html">À propos</a>
-    <a href="projects.html">Projets</a>
-    <a href="podcast.html">Podcast</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html"
+       data-lang="nav_about">
+      À propos
+    </a>
+
+    <a href="projects.html"
+       data-lang="nav_projects">
+      Projets
+    </a>
+
+    <a href="podcast.html"
+       data-lang="nav_podcast">
+      Podcast
+    </a>
+
+    <a href="contact.html"
+       data-lang="nav_contact">
+      Contact
+    </a>
+
+    <button id="langButton"
+            class="lang-button">
+      EN
+    </button>
 
   </nav>
 
@@ -55,7 +75,9 @@
 
     <section class="card contact-card">
 
-      <h2>Contact</h2>
+      <h2 data-lang="contact_title">
+        Contact
+      </h2>
 
       <div class="contact-icons">
 
@@ -98,26 +120,28 @@
 
   </button>
 
-   <!-- Footer premium -->
+  <!-- Footer premium -->
 
   <footer class="site-footer">
   
     <div class="footer-blur"></div>
   
-    <div class="footer-content">
+    <div class="footer-content"
+         data-lang="footer_text">
   
       © <span id="year"></span>
       Alexandre Perrin — Tous droits réservés
   
     </div>
   
-    </footer>
+  </footer>
 
   <!-- Badge carbone -->
 
   <div class="carbon-wrapper">
 
-    <div class="carbon-badge" id="carbonBadge">
+    <div class="carbon-badge"
+         id="carbonBadge">
 
       <div class="carbon-icon">
         🌱
@@ -125,12 +149,19 @@
 
       <div class="carbon-content">
 
-        <div class="carbon-title">
+        <div class="carbon-title"
+             data-lang="carbon_title">
+
           Impact estimé
+
         </div>
 
-        <div class="carbon-value" id="carbonValue">
+        <div class="carbon-value"
+             id="carbonValue"
+             data-lang="carbon_loading">
+
           Calcul...
+
         </div>
 
       </div>
@@ -142,6 +173,7 @@
   <!-- JS -->
 
   <script src="js/theme.js"></script>
+  <script src="js/lang.js"></script>
 
 </body>
 
