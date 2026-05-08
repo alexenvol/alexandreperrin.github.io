@@ -48,10 +48,10 @@ function applyLanguage(lang) {
 
   const button = document.getElementById("langButton");
 
-  button.innerHTML =
+button.innerHTML =
   lang === "fr"
-    ? "🇬🇧 EN"
-    : "🇫🇷 FR";
+    ? "EN"
+    : "FR";
 
   localStorage.setItem("language", lang);
 
