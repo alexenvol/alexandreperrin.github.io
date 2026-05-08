@@ -33,18 +33,34 @@
 
   <!-- Navigation -->
 
- <nav>
+  <nav>
 
-  <a href="index.html" data-lang="nav_about">À propos</a>
-  <a href="projects.html" data-lang="nav_projects">Projets</a>
-  <a href="podcast.html" data-lang="nav_podcast">Podcast</a>
-  <a href="contact.html" data-lang="nav_contact">Contact</a>
+    <a href="index.html"
+       data-lang="nav_about">
+      À propos
+    </a>
 
-  <button id="langButton" class="lang-button">
-    EN
-  </button>
+    <a href="projects.html"
+       data-lang="nav_projects">
+      Projets
+    </a>
 
-</nav>
+    <a href="podcast.html"
+       data-lang="nav_podcast">
+      Podcast
+    </a>
+
+    <a href="contact.html"
+       data-lang="nav_contact">
+      Contact
+    </a>
+
+    <button id="langButton"
+            class="lang-button">
+      EN
+    </button>
+
+  </nav>
 
   <!-- HERO -->
 
@@ -58,10 +74,10 @@
 
       <p class="hero-subtitle"
          data-lang="hero_subtitle">
-      
+
         Élève ingénieur<br>
         Conception mécanique • Systèmes embarqués • Aéronautique
-      
+
       </p>
 
     </div>
@@ -84,11 +100,11 @@
           2021 — Aujourd’hui
         </div>
 
-        <h2>
+        <h2 data-lang="timeline_enib_title">
           ENIB
         </h2>
 
-        <p>
+        <p data-lang="timeline_enib_text">
 
           Je débute ma formation d’ingénieur généraliste orientée mécatronique, systèmes embarqués, électronique et conception mécanique.
 
@@ -110,11 +126,11 @@
           2023
         </div>
 
-        <h2>
+        <h2 data-lang="timeline_germany_title">
           Expérience internationale
         </h2>
 
-        <p>
+        <p data-lang="timeline_germany_text">
 
           Je renforce mon anglais technique en environnement industriel allemand et développe mon adaptation multiculturelle.
 
@@ -136,11 +152,11 @@
           2025
         </div>
 
-        <h2>
+        <h2 data-lang="timeline_ariane_title">
           ArianeGroup
         </h2>
 
-        <p>
+        <p data-lang="timeline_ariane_text">
 
           Je réalise mon stage assistant ingénieur dans le domaine spatial :
           mécanique, prototypage, essais techniques au sein d'en environnement industriel de haute technologie.
@@ -163,11 +179,11 @@
           Aujourd’hui
         </div>
 
-        <h2>
+        <h2 data-lang="vision_title">
           Vision
         </h2>
 
-        <p>
+        <p data-lang="vision_text">
 
           Passionné par les systèmes complexes,
           l’innovation industrielle,
@@ -187,7 +203,8 @@
 
     <div class="footer-blur"></div>
 
-    <div class="footer-content">
+    <div class="footer-content"
+         data-lang="footer_text">
 
       © <span id="year"></span>
       Alexandre Perrin — Tous droits réservés
@@ -211,7 +228,8 @@
 
   <div class="carbon-wrapper">
 
-    <div class="carbon-badge" id="carbonBadge">
+    <div class="carbon-badge"
+         id="carbonBadge">
 
       <div class="carbon-icon">
         🌱
@@ -219,12 +237,19 @@
 
       <div class="carbon-content">
 
-        <div class="carbon-title">
+        <div class="carbon-title"
+             data-lang="carbon_title">
+
           Impact estimé du site
+
         </div>
 
-        <div class="carbon-value" id="carbonValue">
+        <div class="carbon-value"
+             id="carbonValue"
+             data-lang="carbon_loading">
+
           Calcul...
+
         </div>
 
       </div>
