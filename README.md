@@ -1,21 +1,13 @@
 # Alexandre Perrin
 
-Élève-ingénieur à l’ENIB, spécialisé en conception mécanique, systèmes embarqués et prototypage rapide.
+Élève-ingénieur à l’ENIB, spécialisé en conception mécanique, systèmes embarqués et prototypage.
 
-Passionné par :
-- l’aéronautique,
-- les technologies de défense,
-- les systèmes autonomes,
-- la CAO et l’innovation technologique.
+Je développe des projets multidisciplinaires mêlant :
+- CAO et conception 3D,
+- électronique embarquée STM32,
+- automatisation et asservissement,
+- impression 3D et prototypage rapide.
 
-J’aime développer des projets multidisciplinaires mêlant :
-- conception 3D et modélisation sous CATIA,
-- électronique et systèmes embarqués,
-- impression 3D et prototypage rapide,
-- automatisation et développement technique.
+Intéressé par l’aéronautique, les systèmes autonomes et les technologies de pointe.
 
-Ce GitHub regroupe :
-- mes projets d’ingénierie,
-- des conceptions mécaniques et paramétriques,
-- des projets embarqués STM32,
-- des expérimentations techniques et personnelles.
+Ce GitHub regroupe mes projets d’ingénierie, développements techniques et expérimentations personnelles.
