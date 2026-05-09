@@ -1303,3 +1303,163 @@ h2,
   color: white !important;
 
 }
+
+/* ===================================================== */
+/* PASSIONS SECTION */
+/* ===================================================== */
+
+.passions-section {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 120px 8%;
+
+  min-height: 100vh;
+
+}
+
+.passions-image {
+
+  flex: 1;
+}
+
+.passions-image img {
+
+  width: 100%;
+
+  border-radius: 32px;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,0.35);
+
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.passions-image img:hover {
+
+  transform: scale(1.02);
+
+  box-shadow:
+    0 35px 90px rgba(0,0,0,0.45);
+}
+
+.passions-content {
+
+  flex: 1;
+
+  max-width: 620px;
+}
+
+.passions-label {
+
+  font-size: 0.78rem;
+
+  letter-spacing: 3px;
+
+  opacity: 0.45;
+
+  margin-bottom: 20px;
+}
+
+.passions-title {
+
+  font-size: clamp(3rem, 5vw, 5.5rem);
+
+  line-height: 0.95;
+
+  margin-bottom: 35px;
+
+  color: white;
+}
+
+.passions-text {
+
+  font-size: 1.1rem;
+
+  line-height: 1.9;
+
+  opacity: 0.75;
+
+  margin-bottom: 45px;
+
+  max-width: 540px;
+}
+
+.passions-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(160px, 1fr));
+
+  gap: 18px;
+}
+
+.passion-card {
+
+  padding: 18px 22px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(18px);
+
+  font-weight: 500;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.passion-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ===================================================== */
+/* MOBILE */
+/* ===================================================== */
+
+@media (max-width: 1000px) {
+
+  .passions-section {
+
+    flex-direction: column;
+
+    padding: 100px 24px;
+  }
+
+  .passions-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .passions-title {
+
+    font-size: 3rem;
+  }
+
+}
