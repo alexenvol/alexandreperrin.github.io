@@ -1487,3 +1487,29 @@ body:not(.dark-mode) .passions-title {
   color: black;
 
 }
+
+/* ===================================================== */
+/* ENVIRONMENT BADGE LIGHT / DARK */
+/* ===================================================== */
+
+/* ---------- Mode sombre ---------- */
+
+body.dark-mode .carbon-title,
+body.dark-mode .carbon-value,
+body.dark-mode .eco-score,
+body.dark-mode .eco-reference {
+
+  color: white !important;
+
+}
+
+/* ---------- Mode clair ---------- */
+
+body:not(.dark-mode) .carbon-title,
+body:not(.dark-mode) .carbon-value,
+body:not(.dark-mode) .eco-score,
+body:not(.dark-mode) .eco-reference {
+
+  color: black !important;
+
+}
