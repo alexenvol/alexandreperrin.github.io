@@ -1,18 +1,32 @@
 :root {
 
   --bg-color: #f4f4f4;
+
   --text-color: #D48260;
+
   --card-bg: #ffffff;
+
   --accent: #D48260;
+
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
 
 }
 
 body.dark-mode {
 
   --bg-color: #121212;
+
   --text-color: #D48260;
+
   --card-bg: #1e1e1e;
+
   --accent: #D48260;
+
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --nav-bg: rgba(20, 20, 20, 0.85);
 
 }
 
@@ -548,7 +562,7 @@ a {
 
   margin-bottom: 20px;
 
-  color: var(--accent);
+  color: white;
 }
 
 .project-content p {
@@ -1264,11 +1278,28 @@ body.dark-mode .lang-button {
     0 6px 20px rgba(0,0,0,0.25);
 }
 
+/* ===================================================== */
+/* WHITE TITLES */
+/* ===================================================== */
+
+h1,
+h2,
+.hero h1,
+.timeline-content h2 {
+
+  color: white;
+
+}
+
+/* ===================================================== */
+/* ENVIRONMENT BADGE */
+/* ===================================================== */
+
 .carbon-title,
 .carbon-value,
 .eco-score,
 .eco-reference {
 
-  color: white;
+  color: white !important;
 
 }
