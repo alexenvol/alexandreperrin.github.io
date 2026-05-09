@@ -10,21 +10,22 @@ const translations = {
     hero_subtitle:
       "Élève ingénieur<br>Conception mécanique • Systèmes embarqués • Aéronautique",
 
-    passions_label: "CENTRES D’INTÉRÊT",
+    passions_label: "PASSIONS",
 
-    passions_title: "Au-delà de l’ingénierie",
+    passions_title:
+      "Explorer.<br>Construire.<br>Comprendre.",
     
     passions_text:
-      "L’alpinisme, le trail, l’escalade ou encore le ski de randonnée occupent une place importante dans mon équilibre. J’apprécie également la lecture technique, le bricolage et la simulation de vol sur X-Plane 12.",
+      "Entre montagne, ingénierie et exploration technique, mes centres d’intérêt nourrissent ma manière d’aborder les projets complexes et l’innovation.",
     
-    passion_1: "Alpinisme",
-    passion_2: "Trail",
-    passion_3: "Escalade",
-    passion_4: "VTT",
-    passion_5: "Ski de randonnée",
-    passion_6: "Lecture",
-    passion_7: "Bricolage",
-    passion_8: "Simulation de vol",
+    passion_1: "🏔️ Alpinisme",
+    passion_2: "🏃 Trail",
+    passion_3: "🧗 Escalade",
+    passion_4: "🚵 VTT",
+    passion_5: "🎿 Ski de randonnée",
+    passion_6: "📚 Lecture",
+    passion_7: "🔧 Bricolage",
+    passion_8: "✈️ X-Plane 12",
 
     timeline_enib_title: "ENIB",
 
@@ -148,21 +149,22 @@ const translations = {
     hero_subtitle:
       "Engineering student<br>Mechanical design • Embedded systems • Aerospace",
 
-    passions_label: "INTERESTS",
+    passions_label: "PASSIONS",
 
-    passions_title: "Beyond engineering",
+    passions_title:
+      "Explore.<br>Build.<br>Understand.",
     
     passions_text:
-      "Mountaineering, trail running, climbing and ski touring are an important part of my balance. I also enjoy technical reading, DIY projects and flight simulation on X-Plane 12.",
+      "Between mountains, engineering and technical exploration, my interests shape the way I approach complex projects and innovation.",
     
-    passion_1: "Mountaineering",
-    passion_2: "Trail running",
-    passion_3: "Climbing",
-    passion_4: "Mountain biking",
-    passion_5: "Ski touring",
-    passion_6: "Reading",
-    passion_7: "DIY",
-    passion_8: "Flight simulation",
+    passion_1: "🏔️ Mountaineering",
+    passion_2: "🏃 Trail running",
+    passion_3: "🧗 Climbing",
+    passion_4: "🚵 Mountain biking",
+    passion_5: "🎿 Ski touring",
+    passion_6: "📚 Reading",
+    passion_7: "🔧 DIY",
+    passion_8: "✈️ X-Plane 12",
 
     timeline_enib_title:
       "ENIB",
