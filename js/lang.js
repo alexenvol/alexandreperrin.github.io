@@ -27,6 +27,8 @@ const translations = {
     passion_7: "🔧 Bricolage",
     passion_8: "✈️ X-Plane 12",
 
+    timeline_today_1: "2021 — Aujourd’hui",
+
     timeline_enib_title: "ENIB",
 
     timeline_enib_text:
@@ -46,6 +48,8 @@ const translations = {
 
     vision_title:
       "Vision",
+
+    timeline_today_2: "Aujourd’hui",
 
     vision_text:
       "Passionné par les systèmes complexes, l’innovation industrielle et l’aéronautique.",
@@ -166,6 +170,8 @@ const translations = {
     passion_7: "🔧 DIY",
     passion_8: "✈️ X-Plane 12",
 
+    timeline_today_1: "2021 — Present",
+    
     timeline_enib_title:
       "ENIB",
 
@@ -186,6 +192,8 @@ const translations = {
 
     vision_title:
       "Vision",
+
+    timeline_today_2: "Present",
 
     vision_text:
       "Passionate about complex systems, aerospace and industrial innovation.",
