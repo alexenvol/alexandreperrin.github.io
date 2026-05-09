@@ -1,32 +1,18 @@
 :root {
 
   --bg-color: #f4f4f4;
-
   --text-color: #D48260;
-
   --card-bg: #ffffff;
-
   --accent: #D48260;
-
-  --shadow: rgba(0, 0, 0, 0.08);
-
-  --nav-bg: rgba(255, 255, 255, 0.85);
 
 }
 
 body.dark-mode {
 
   --bg-color: #121212;
-
   --text-color: #D48260;
-
   --card-bg: #1e1e1e;
-
   --accent: #D48260;
-
-  --shadow: rgba(0, 0, 0, 0.4);
-
-  --nav-bg: rgba(20, 20, 20, 0.85);
 
 }
 
@@ -164,7 +150,7 @@ h1 {
 
   font-size: 3.5rem;
 
-  color: var(--accent);
+  color: white;
 
   margin-bottom: 10px;
 
@@ -179,7 +165,7 @@ h2 {
 
   margin-bottom: 20px;
 
-  color: var(--accent);
+  color: white;
 }
 
 h3 {
@@ -1276,4 +1262,13 @@ body.dark-mode .lang-button {
 
   box-shadow:
     0 6px 20px rgba(0,0,0,0.25);
+}
+
+.carbon-title,
+.carbon-value,
+.eco-score,
+.eco-reference {
+
+  color: white;
+
 }
