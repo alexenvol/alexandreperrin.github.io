@@ -1697,3 +1697,19 @@ body:not(.dark-mode) .eco-reference {
 
   opacity: 0.6;
 }
+
+/* ---------- Burger menu light mode ---------- */
+
+body:not(.dark-mode) .menu-toggle span {
+
+  background: black;
+
+}
+
+/* ---------- Burger menu dark mode ---------- */
+
+body.dark-mode .menu-toggle span {
+
+  background: white;
+
+}
