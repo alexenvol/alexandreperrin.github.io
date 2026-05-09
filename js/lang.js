@@ -10,6 +10,22 @@ const translations = {
     hero_subtitle:
       "Élève ingénieur<br>Conception mécanique • Systèmes embarqués • Aéronautique",
 
+    passions_label: "CENTRES D’INTÉRÊT",
+
+    passions_title: "Au-delà de l’ingénierie",
+    
+    passions_text:
+      "L’alpinisme, le trail, l’escalade ou encore le ski de randonnée occupent une place importante dans mon équilibre. J’apprécie également la lecture technique, le bricolage et la simulation de vol sur X-Plane 12.",
+    
+    passion_1: "Alpinisme",
+    passion_2: "Trail",
+    passion_3: "Escalade",
+    passion_4: "VTT",
+    passion_5: "Ski de randonnée",
+    passion_6: "Lecture",
+    passion_7: "Bricolage",
+    passion_8: "Simulation de vol",
+
     timeline_enib_title: "ENIB",
 
     timeline_enib_text:
@@ -131,6 +147,22 @@ const translations = {
 
     hero_subtitle:
       "Engineering student<br>Mechanical design • Embedded systems • Aerospace",
+
+    passions_label: "INTERESTS",
+
+    passions_title: "Beyond engineering",
+    
+    passions_text:
+      "Mountaineering, trail running, climbing and ski touring are an important part of my balance. I also enjoy technical reading, DIY projects and flight simulation on X-Plane 12.",
+    
+    passion_1: "Mountaineering",
+    passion_2: "Trail running",
+    passion_3: "Climbing",
+    passion_4: "Mountain biking",
+    passion_5: "Ski touring",
+    passion_6: "Reading",
+    passion_7: "DIY",
+    passion_8: "Flight simulation",
 
     timeline_enib_title:
       "ENIB",
