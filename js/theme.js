@@ -337,3 +337,26 @@ window.addEventListener(
 );
 
 revealTimeline();
+
+/* ---------- Burger menu ---------- */
+
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const fullscreenMenu =
+  document.getElementById("fullscreenMenu");
+
+if (menuToggle && fullscreenMenu) {
+
+  menuToggle.addEventListener(
+    "click",
+    () => {
+
+      menuToggle.classList.toggle("active");
+
+      fullscreenMenu.classList.toggle("active");
+
+    }
+  );
+
+}
