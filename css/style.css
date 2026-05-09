@@ -1515,57 +1515,18 @@ body:not(.dark-mode) .eco-reference {
 }
 
 /* ===================================================== */
-/* PREMIUM BURGER MENU */
+/* FLOATING BURGER MENU */
 /* ===================================================== */
-
-.navbar {
-
-  position: fixed;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-
-  padding: 24px 32px;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  z-index: 6000;
-
-  backdrop-filter: blur(18px);
-
-  -webkit-backdrop-filter: blur(18px);
-
-  background:
-    rgba(20,20,20,0.25);
-}
-
-/* ---------- Logo ---------- */
-
-.logo {
-
-  text-decoration: none;
-
-  font-weight: 600;
-
-  font-size: 1rem;
-
-  letter-spacing: 0.4px;
-
-  color: var(--text-color);
-}
-
-/* ---------- Burger ---------- */
 
 .menu-toggle {
 
-  width: 54px;
-  height: 54px;
+  position: fixed;
+
+  top: 24px;
+  right: 24px;
+
+  width: 58px;
+  height: 58px;
 
   border-radius: 999px;
 
@@ -1575,7 +1536,9 @@ body:not(.dark-mode) .eco-reference {
   background:
     rgba(255,255,255,0.06);
 
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
 
   display: flex;
 
@@ -1589,27 +1552,41 @@ body:not(.dark-mode) .eco-reference {
 
   cursor: pointer;
 
+  z-index: 7000;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.18);
+
   transition:
     transform 0.25s ease,
-    background 0.25s ease;
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+/* ---------- Hover ---------- */
 
 .menu-toggle:hover {
 
-  transform: scale(1.05);
+  transform:
+    scale(1.05);
 
   background:
     rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.25);
 }
+
+/* ---------- Traits ---------- */
 
 .menu-toggle span {
 
   width: 20px;
   height: 2px;
 
-  background: white;
-
   border-radius: 999px;
+
+  background: white;
 
   transition:
     transform 0.35s ease,
@@ -1632,7 +1609,9 @@ body:not(.dark-mode) .eco-reference {
     rotate(-45deg);
 }
 
-/* ---------- Fullscreen ---------- */
+/* ===================================================== */
+/* FULLSCREEN MENU */
+/* ===================================================== */
 
 .fullscreen-menu {
 
@@ -1665,7 +1644,7 @@ body:not(.dark-mode) .eco-reference {
     opacity 0.45s ease,
     visibility 0.45s ease;
 
-  z-index: 5000;
+  z-index: 6000;
 }
 
 /* ---------- Active ---------- */
@@ -1681,15 +1660,16 @@ body:not(.dark-mode) .eco-reference {
 
 .fullscreen-menu a {
 
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size:
+    clamp(2.8rem, 6vw, 5.5rem);
 
   font-weight: 600;
 
   text-decoration: none;
 
-  color: white;
-
   letter-spacing: -2px;
+
+  color: white;
 
   transform:
     translateY(20px);
