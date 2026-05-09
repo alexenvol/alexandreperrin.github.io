@@ -1513,3 +1513,207 @@ body:not(.dark-mode) .eco-reference {
   color: black !important;
 
 }
+
+/* ===================================================== */
+/* PREMIUM BURGER MENU */
+/* ===================================================== */
+
+.navbar {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 24px 32px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  z-index: 6000;
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  background:
+    rgba(20,20,20,0.25);
+}
+
+/* ---------- Logo ---------- */
+
+.logo {
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+
+  letter-spacing: 0.4px;
+
+  color: var(--text-color);
+}
+
+/* ---------- Burger ---------- */
+
+.menu-toggle {
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(16px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.menu-toggle:hover {
+
+  transform: scale(1.05);
+
+  background:
+    rgba(255,255,255,0.12);
+}
+
+.menu-toggle span {
+
+  width: 20px;
+  height: 2px;
+
+  background: white;
+
+  border-radius: 999px;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+/* ---------- Animation X ---------- */
+
+.menu-toggle.active span:nth-child(1) {
+
+  transform:
+    translateY(4px)
+    rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+
+  transform:
+    translateY(-5px)
+    rotate(-45deg);
+}
+
+/* ---------- Fullscreen ---------- */
+
+.fullscreen-menu {
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(10,10,10,0.82);
+
+  backdrop-filter: blur(30px);
+
+  -webkit-backdrop-filter: blur(30px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 34px;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+
+  z-index: 5000;
+}
+
+/* ---------- Active ---------- */
+
+.fullscreen-menu.active {
+
+  opacity: 1;
+
+  visibility: visible;
+}
+
+/* ---------- Liens ---------- */
+
+.fullscreen-menu a {
+
+  font-size: clamp(2.5rem, 6vw, 5rem);
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  color: white;
+
+  letter-spacing: -2px;
+
+  transform:
+    translateY(20px);
+
+  opacity: 0;
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+/* ---------- Apparition ---------- */
+
+.fullscreen-menu.active a {
+
+  transform:
+    translateY(0);
+
+  opacity: 1;
+}
+
+/* ---------- Hover ---------- */
+
+.fullscreen-menu a:hover {
+
+  opacity: 0.6;
+}
