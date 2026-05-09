@@ -1,19 +1,33 @@
 :root {
+
   --bg-color: #f4f4f4;
-  --text-color: #222;
+
+  --text-color: #D48260;
+
   --card-bg: #ffffff;
-  --accent: #0b3d91;
+
+  --accent: #D48260;
+
   --shadow: rgba(0, 0, 0, 0.08);
+
   --nav-bg: rgba(255, 255, 255, 0.85);
+
 }
 
 body.dark-mode {
+
   --bg-color: #121212;
-  --text-color: #f5f5f5;
+
+  --text-color: #D48260;
+
   --card-bg: #1e1e1e;
-  --accent: #6ea8ff;
+
+  --accent: #D48260;
+
   --shadow: rgba(0, 0, 0, 0.4);
+
   --nav-bg: rgba(20, 20, 20, 0.85);
+
 }
 
 /* ---------- Global ---------- */
