@@ -1903,13 +1903,19 @@ a:active {
 
     width: 300px;
 
-    height: 155px;
+    height: 175px;
 
   }
 
   .carbon-content {
 
     width: 220px;
+
+  }
+
+  .eco-reference {
+
+    line-height: 1.2;
 
   }
 
