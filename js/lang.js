@@ -17,15 +17,14 @@ const translations = {
     
     passions_text:
       "Entre montagne, ingénierie et exploration technique, mes centres d’intérêt nourrissent ma manière d’aborder les projets complexes et l’innovation.",
-    
-    passion_1: "🏔️ Alpinisme",
-    passion_2: "🏃 Trail",
-    passion_3: "🧗 Escalade",
-    passion_4: "🚵 VTT",
-    passion_5: "🎿 Ski de randonnée",
-    passion_6: "📚 Lecture",
-    passion_7: "🔧 Bricolage",
-    passion_8: "✈️ X-Plane 12",
+        
+    passion_mountaineering: "Alpinisme",
+    passion_trail: "Trail",
+    passion_climbing: "Escalade",
+    passion_mtb: "VTT",
+    passion_ski: "Ski de randonnée",
+    passion_reading: "Lecture",
+    passion_workshop: "Atelier & bricolage",
 
     aviation_title:
       "Passion aéronautique<br>& culture du vol",
@@ -33,6 +32,12 @@ const translations = {
     aviation_text:
       "Passionné par l’aéronautique depuis plusieurs années, j’ai eu l’occasion de voler sur Piper PA28, Tobago TB20 ainsi qu’en planeur en environnement montagneux. Cette passion se prolonge également à travers la simulation de vol sur X-Plane 12.",
 
+    radar_pilotage: "Pilotage",
+    radar_navigation: "Navigation",
+    radar_technique: "Technique",
+    radar_simulation: "Simulation",
+    radar_mountain: "Vol montagne",
+    
     timeline_today_1: "2021 — Aujourd’hui",
 
     timeline_enib_title: "ENIB",
@@ -167,14 +172,13 @@ const translations = {
     passions_text:
       "Between mountains, engineering and technical exploration, my interests shape the way I approach complex projects and innovation.",
     
-    passion_1: "🏔️ Mountaineering",
-    passion_2: "🏃 Trail running",
-    passion_3: "🧗 Climbing",
-    passion_4: "🚵 Mountain biking",
-    passion_5: "🎿 Ski touring",
-    passion_6: "📚 Reading",
-    passion_7: "🔧 DIY",
-    passion_8: "✈️ X-Plane 12",
+    passion_mountaineering: "Mountaineering",
+    passion_trail: "Trail Running",
+    passion_climbing: "Climbing",
+    passion_mtb: "Mountain Biking",
+    passion_ski: "Backcountry Skiing",
+    passion_reading: "Reading",
+    passion_workshop: "Workshop & DIY",
 
     aviation_title:
       "Aviation passion<br>& flight culture",
@@ -182,6 +186,12 @@ const translations = {
     aviation_text:
       "Passionate about aviation for many years, I have flown aboard Piper PA28, Tobago TB20 and gliders in mountainous regions. This passion also extends to flight simulation through X-Plane 12.",
 
+    radar_pilotage: "Flying",
+    radar_navigation: "Navigation",
+    radar_technique: "Engineering",
+    radar_simulation: "Simulation",
+    radar_mountain: "Mountain Flying",
+    
     timeline_today_1: "2021 — Present",
     
     timeline_enib_title:
