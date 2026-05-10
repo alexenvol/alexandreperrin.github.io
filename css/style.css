@@ -1952,3 +1952,159 @@ a:active {
   line-height: 1.2;
 
 }
+
+/* ===================================================== */
+/* AVIATION SECTION */
+/* ===================================================== */
+
+.aviation-section {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 140px 8%;
+
+  min-height: 100vh;
+
+}
+
+.aviation-image {
+
+  flex: 1;
+}
+
+.aviation-image img {
+
+  width: 100%;
+
+  border-radius: 34px;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.35);
+
+  transition:
+    transform 0.7s ease,
+    box-shadow 0.7s ease;
+}
+
+.aviation-image img:hover {
+
+  transform: scale(1.02);
+
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.45);
+}
+
+.aviation-content {
+
+  flex: 1;
+
+  max-width: 620px;
+}
+
+.aviation-label {
+
+  font-size: 0.78rem;
+
+  letter-spacing: 3px;
+
+  opacity: 0.45;
+
+  margin-bottom: 20px;
+}
+
+.aviation-title {
+
+  font-size: clamp(3rem, 5vw, 5.5rem);
+
+  line-height: 0.95;
+
+  margin-bottom: 35px;
+}
+
+.aviation-text {
+
+  font-size: 1.08rem;
+
+  line-height: 1.9;
+
+  opacity: 0.78;
+
+  margin-bottom: 45px;
+
+  max-width: 540px;
+}
+
+.aviation-cards {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(160px, 1fr));
+
+  gap: 18px;
+}
+
+.aviation-card {
+
+  padding: 18px 22px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(18px);
+
+  font-weight: 500;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.aviation-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1000px) {
+
+  .aviation-section {
+
+    flex-direction: column;
+
+    padding: 100px 24px;
+  }
+
+  .aviation-cards {
+
+    grid-template-columns: 1fr;
+  }
+
+  .aviation-title {
+
+    font-size: 3rem;
+  }
+
+}
