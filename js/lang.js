@@ -27,6 +27,12 @@ const translations = {
     passion_7: "🔧 Bricolage",
     passion_8: "✈️ X-Plane 12",
 
+    aviation_title:
+      "Passion aéronautique<br>& culture du vol",
+
+    aviation_text:
+      "Passionné par l’aéronautique depuis plusieurs années, j’ai eu l’occasion de voler sur Piper PA28, Tobago TB20 ainsi qu’en planeur en environnement montagneux. Cette passion se prolonge également à travers la simulation de vol sur X-Plane 12.",
+
     timeline_today_1: "2021 — Aujourd’hui",
 
     timeline_enib_title: "ENIB",
@@ -169,6 +175,12 @@ const translations = {
     passion_6: "📚 Reading",
     passion_7: "🔧 DIY",
     passion_8: "✈️ X-Plane 12",
+
+    aviation_title:
+      "Aviation passion<br>& flight culture",
+
+    aviation_text:
+      "Passionate about aviation for many years, I have flown aboard Piper PA28, Tobago TB20 and gliders in mountainous regions. This passion also extends to flight simulation through X-Plane 12.",
 
     timeline_today_1: "2021 — Present",
     
