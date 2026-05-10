@@ -679,9 +679,9 @@ a {
 
 .carbon-wrapper:hover .carbon-badge {
 
-  width: 360px;
+  width: 300px;
 
-  height: 165px;
+  height: 175px;
 
   border-radius: 28px;
 
@@ -790,7 +790,7 @@ a {
 
   opacity: 0.55;
 
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 /* ---------- Contact ---------- */
