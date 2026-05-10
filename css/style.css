@@ -1860,3 +1860,57 @@ body.dark-mode .moon-icon {
 
   color: white;
 }
+
+/* ===================================================== */
+/* MOBILE TAP HIGHLIGHT REMOVE */
+/* ===================================================== */
+
+button,
+a,
+.menu-toggle,
+.theme-switch,
+.lang-button,
+.passion-card {
+
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+/* ---------- Remove mobile focus flash ---------- */
+
+button:focus,
+button:active,
+a:focus,
+a:active {
+
+  outline: none;
+
+}
+
+/* ===================================================== */
+/* MOBILE ENVIRONMENT BADGE */
+/* ===================================================== */
+
+@media (max-width: 700px) {
+
+  .carbon-wrapper {
+
+    width: 300px;
+
+  }
+
+  .carbon-wrapper:hover .carbon-badge {
+
+    width: 300px;
+
+    height: 155px;
+
+  }
+
+  .carbon-content {
+
+    width: 220px;
+
+  }
+
+}
