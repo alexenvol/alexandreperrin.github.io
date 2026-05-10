@@ -2319,3 +2319,132 @@ a:active {
   }
 
 }
+
+/* ===================================================== */
+/* PASSIONS CLOUD */
+/* ===================================================== */
+
+.passions-cloud {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  max-width: 620px;
+
+  margin-top: 40px;
+
+}
+
+/* ---------- Bubble ---------- */
+
+.passion-bubble {
+
+  padding: 18px 26px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.2px;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+
+  cursor: default;
+
+  user-select: none;
+}
+
+/* ---------- Variantes ---------- */
+
+.passion-bubble.big {
+
+  padding:
+    24px 34px;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+}
+
+.passion-bubble.xp {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212,130,96,0.18),
+      rgba(212,130,96,0.05)
+    );
+
+  border:
+    1px solid rgba(212,130,96,0.25);
+}
+
+/* ---------- Hover ---------- */
+
+.passion-bubble:hover {
+
+  transform:
+    translateY(-5px)
+    scale(1.03);
+
+  background:
+    rgba(255,255,255,0.10);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* ---------- Light mode ---------- */
+
+body:not(.dark-mode) .passion-bubble {
+
+  background:
+    rgba(0,0,0,0.04);
+
+  border:
+    1px solid rgba(0,0,0,0.05);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+  .passions-cloud {
+
+    gap: 12px;
+  }
+
+  .passion-bubble {
+
+    padding: 14px 18px;
+
+    font-size: 0.82rem;
+  }
+
+  .passion-bubble.big {
+
+    padding: 18px 24px;
+
+    font-size: 0.95rem;
+  }
+
+}
