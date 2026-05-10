@@ -71,6 +71,24 @@ const translations = {
     projects_subtitle:
       "Conception mécanique, systèmes embarqués et prototypage.",
 
+    drone_title:
+      "Commande de drone par mode glissant",
+
+    drone_text:
+      "Étude et implémentation d’une commande robuste par modes glissants appliquée à un drone quadrirotor.",
+    
+    drone_li_1:
+      "Modélisation dynamique non linéaire",
+    
+    drone_li_2:
+      "Commande robuste par mode glissant",
+    
+    drone_li_3:
+      "Stabilisation et suivi de trajectoire",
+    
+    drone_li_4:
+      "Simulation sous Scilab / Xcos",
+
     lego_title:
       "Projet LEGO sous CATIA",
 
@@ -225,6 +243,24 @@ const translations = {
 
     projects_subtitle:
       "Mechanical design, embedded systems and prototyping.",
+
+    drone_title:
+      "Sliding Mode Drone Control",
+
+    drone_text:
+      "Study and implementation of a robust sliding mode controller applied to a quadrotor drone.",
+    
+    drone_li_1:
+      "Nonlinear dynamic modeling",
+    
+    drone_li_2:
+      "Robust sliding mode control",
+    
+    drone_li_3:
+      "Stabilization and trajectory tracking",
+    
+    drone_li_4:
+      "Scilab / Xcos simulation",
 
     lego_title:
       "LEGO Project in CATIA",
