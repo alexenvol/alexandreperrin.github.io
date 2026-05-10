@@ -8,6 +8,6 @@ Je développe des projets multidisciplinaires mêlant :
 - automatisation et asservissement,
 - impression 3D et prototypage rapide.
 
-Intéressé par l’aéronautique, les systèmes autonomes et les technologies de pointe.
+Passionné par l’aéronautique, les systèmes autonomes et les technologies de pointe.
 
 Ce GitHub regroupe mes projets d’ingénierie, développements techniques et expérimentations personnelles.
