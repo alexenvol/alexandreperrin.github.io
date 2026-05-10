@@ -26,38 +26,6 @@ if (savedTheme === "light") {
 
 }
 
-/* ---------- Update theme button ---------- */
-
-function updateThemeButton() {
-
-  if (!button) return;
-
-  const lang =
-    localStorage.getItem("language") || "fr";
-
-  const isDark =
-    document.body.classList.contains("dark-mode");
-
-  if (lang === "fr") {
-
-    button.innerHTML =
-      isDark
-        ? "☀️ Mode jour"
-        : "🌙 Mode sombre";
-
-  } else {
-
-    button.innerHTML =
-      isDark
-        ? "☀️ Light mode"
-        : "🌙 Dark mode";
-
-  }
-
-}
-
-updateThemeButton();
-
 /* ---------- Toggle theme ---------- */
 
 function toggleDarkMode() {
@@ -71,8 +39,6 @@ function toggleDarkMode() {
     "theme",
     isDark ? "dark" : "light"
   );
-
-  updateThemeButton();
 
 }
 
