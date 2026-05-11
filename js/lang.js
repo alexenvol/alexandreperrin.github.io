@@ -272,7 +272,7 @@ const translations = {
       "Fishing Rod Design",
 
     project_fishing_text:
-      "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction."
+      "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction.",
 
     lego_title:
       "LEGO Project in CATIA",
