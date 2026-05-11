@@ -38,9 +38,11 @@ const translations = {
     radar_simulation: "Simulation",
     radar_mountain: "Vol montagne",
     
-    timeline_today_1: "2021 — Aujourd’hui",
+    timeline_today_1: 
+      "2021 — Aujourd’hui",
 
-    timeline_enib_title: "ENIB",
+    timeline_enib_title: 
+      "ENIB",
 
     timeline_enib_text:
       "Je débute ma formation d’ingénieur généraliste orientée mécatronique, systèmes embarqués, électronique et conception mécanique.",
@@ -111,10 +113,10 @@ const translations = {
       "Modélisation 3D",
 
     lego_li_2:
-      "Assemblages complexes",
+      "Paramétrage",
 
     lego_li_3:
-      "Contraintes modulaires",
+      "Règles",
 
     mallette_title:
       "Mallette CAO paramétrique",
@@ -245,7 +247,8 @@ const translations = {
     vision_title:
       "Vision",
 
-    timeline_today_2: "Present",
+    timeline_today_2: 
+      "Present",
 
     vision_text:
       "Passionate about complex systems, aerospace and industrial innovation.",
@@ -296,10 +299,10 @@ const translations = {
       "3D modeling",
 
     lego_li_2:
-      "Complex assemblies",
+      "Parametric design",
 
     lego_li_3:
-      "Modular constraints",
+      "Rules",
 
     mallette_title:
       "Parametric CAD Case",
