@@ -89,6 +89,12 @@ const translations = {
     drone_li_4:
       "Simulation sous Scilab / Xcos",
 
+    project_rafale_title:
+      "Dimensionnement d’un train d’atterrissage de Rafale Marine",
+
+    project_rafale_text:
+      "Étude mécanique du système d’amortissement d’un train d’atterrissage de Rafale Marine avec corrélation expérimentation / simulation afin d’ajuster la raideur du ressort selon le cahier des charges d’absorption d’énergie et de tenue mécanique.",
+
     project_fishing_title:
       "Conception d’une canne à pêche",
 
@@ -268,12 +274,18 @@ const translations = {
     drone_li_4:
       "Scilab / Xcos simulation",
 
+    project_rafale_title:
+      "Rafale Marine Landing Gear Design",
+
+    project_rafale_text:
+      "Mechanical study of a Rafale Marine landing gear damping system with experimental/simulation correlation to tune spring stiffness according to energy absorption and structural performance requirements.",
+
     project_fishing_title:
       "Fishing Rod Design",
 
     project_fishing_text:
       "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction.",
-
+    
     lego_title:
       "LEGO Project in CATIA",
 
