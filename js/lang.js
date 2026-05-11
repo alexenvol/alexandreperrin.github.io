@@ -89,6 +89,12 @@ const translations = {
     drone_li_4:
       "Simulation sous Scilab / Xcos",
 
+    project_fishing_title:
+      "Conception d’une canne à pêche",
+
+    project_fishing_text:
+      "Développement d’un prototype de canne à pêche en composite avec étude mécanique et simulation RDM par éléments finis. Travail orienté optimisation de rigidité, comportement vibratoire et réduction de masse.",
+    
     lego_title:
       "Projet LEGO sous CATIA",
 
@@ -261,6 +267,12 @@ const translations = {
     
     drone_li_4:
       "Scilab / Xcos simulation",
+
+    project_fishing_title:
+      "Fishing Rod Design",
+
+    project_fishing_text:
+      "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction."
 
     lego_title:
       "LEGO Project in CATIA",
