@@ -136,6 +136,27 @@ const translations = {
     lego_li_3:
       "Règles",
 
+    haptic_title:
+  "Système de commande haptique par jauges de déformation",
+
+    haptic_intro:
+      "Conception d’un dispositif de mesure haptique basé sur une lame déformable instrumentée par jauges de déformation et pilotée par STM32.",
+    
+    haptic_li_1:
+      "Instrumentation par pont de Wheatstone et amplification analogique",
+    
+    haptic_li_2:
+      "Acquisition et traitement du signal avec STM32",
+    
+    haptic_li_3:
+      "Pilotage d’un moteur pas à pas avec asservissement en position",
+    
+    haptic_li_4:
+      "Corrélation théorie / expérimentation et calibration du système",
+    
+    haptic_li_5:
+      "Développement électronique, logiciel embarqué et interface IHM",
+
     mallette_title:
       "Mallette CAO paramétrique",
 
@@ -339,6 +360,27 @@ const translations = {
 
     lego_li_3:
       "Rules",
+
+    haptic_title:
+  "Haptic Control System Using Strain Gauges",
+
+    haptic_intro:
+      "Design of a haptic measurement device based on a deformable beam instrumented with strain gauges and controlled using STM32.",
+    
+    haptic_li_1:
+      "Wheatstone bridge instrumentation and analog amplification",
+    
+    haptic_li_2:
+      "Signal acquisition and processing using STM32",
+    
+    haptic_li_3:
+      "Stepper motor control with position feedback loop",
+    
+    haptic_li_4:
+      "Theory/experiment correlation and system calibration",
+    
+    haptic_li_5:
+      "Electronics, embedded software and HMI development",
 
     mallette_title:
       "Parametric CAD Case",
