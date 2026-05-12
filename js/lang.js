@@ -378,7 +378,7 @@ const translations = {
       "Academic project developed at ENIB",
     
     project_fishing_title:
-  "Composite fishing rod structural design",
+      "Composite fishing rod structural design",
 
     project_fishing_text:
       "Mechanical analysis and finite element modelling of a composite fishing rod.<br><br>The project focused on the structural behaviour of the rod under quasi-static loading, combining beam theory, material properties and numerical simulations.<br><br>The work included the study of carbon / glass fibre ply stacking, global structural stiffness, as well as deformation and deflection under applied loads.",
