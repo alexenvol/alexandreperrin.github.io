@@ -120,11 +120,23 @@ const translations = {
       "Projet académique réalisé à l’ENIB",
     
     project_fishing_title:
-      "Conception d’une canne à pêche",
-
+      "Dimensionnement d’une canne à pêche composite",
+    
     project_fishing_text:
-      "Développement d’un prototype de canne à pêche en composite avec étude mécanique et simulation RDM par éléments finis. Travail orienté optimisation de rigidité, comportement vibratoire et réduction de masse.",
-
+      "Étude mécanique et modélisation par éléments finis d’une canne à pêche en matériaux composites.<br><br>Le projet portait sur l’analyse du comportement structurel de la canne sous chargement quasi-statique, avec corrélation entre théorie des poutres, propriétés matériaux et simulations numériques.<br><br>Les travaux ont notamment permis d’étudier l’influence des empilements de plis carbone / fibre de verre, la rigidité globale de la structure, ainsi que la déformation et la flèche obtenues en fonction du chargement appliqué.",
+    
+    project_fishing_li_1:
+      "Simulation éléments finis (MEF)",
+    
+    project_fishing_li_2:
+      "Théorie des poutres et RDM",
+    
+    project_fishing_li_3:
+      "Étude de composites carbone / fibre de verre",
+    
+    project_fishing_li_4:
+      "Analyse de rigidité et comportement mécanique",
+    
     project_airfoil_title:
       "Déformation d’un profil d’aile d’avion",
 
@@ -159,7 +171,7 @@ const translations = {
       "Règles",
 
     haptic_title:
-  "Système de commande haptique par jauges de déformation",
+      "Système de commande haptique par jauges de déformation",
 
     haptic_intro:
       "Conception d’un dispositif de mesure haptique basé sur une lame déformable instrumentée par jauges de déformation et pilotée par STM32.",
@@ -366,11 +378,23 @@ const translations = {
       "Academic project developed at ENIB",
     
     project_fishing_title:
-      "Fishing Rod Design",
+  "Composite fishing rod structural design",
 
     project_fishing_text:
-      "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction.",
-
+      "Mechanical analysis and finite element modelling of a composite fishing rod.<br><br>The project focused on the structural behaviour of the rod under quasi-static loading, combining beam theory, material properties and numerical simulations.<br><br>The work included the study of carbon / glass fibre ply stacking, global structural stiffness, as well as deformation and deflection under applied loads.",
+    
+    project_fishing_li_1:
+      "Finite element simulation (FEM)",
+    
+    project_fishing_li_2:
+      "Beam theory and solid mechanics",
+    
+    project_fishing_li_3:
+      "Carbon / glass fibre composite study",
+    
+    project_fishing_li_4:
+      "Structural stiffness and mechanical behaviour analysis",
+    
     project_airfoil_title:
       "Aircraft Airfoil Deformation",
 
@@ -405,7 +429,7 @@ const translations = {
       "Rules",
 
     haptic_title:
-  "Haptic Control System Using Strain Gauges",
+      "Haptic Control System Using Strain Gauges",
 
     haptic_intro:
       "Design of a haptic measurement device based on a deformable beam instrumented with strain gauges and controlled using STM32.",
