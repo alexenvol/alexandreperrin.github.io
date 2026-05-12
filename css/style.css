@@ -2542,3 +2542,112 @@ body:not(.dark-mode) .passion-bubble {
     0 16px 34px rgba(212,130,96,0.22);
 
 }
+
+/* ===================================================== */
+/* LIGHTBOX GALLERY NAVIGATION */
+/* ===================================================== */
+
+.lightbox-prev,
+.lightbox-next {
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 64px;
+  height: 64px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  color: white;
+
+  font-size: 2.8rem;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    opacity 0.25s ease;
+
+  z-index: 6000;
+}
+
+/* ---------- Hover ---------- */
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+
+  transform:
+    translateY(-50%)
+    scale(1.08);
+
+  background:
+    rgba(255,255,255,0.14);
+}
+
+/* ---------- Positions ---------- */
+
+.lightbox-prev {
+
+  left: 30px;
+}
+
+.lightbox-next {
+
+  right: 30px;
+}
+
+/* ---------- Light mode ---------- */
+
+body:not(.dark-mode)
+.lightbox-prev,
+body:not(.dark-mode)
+.lightbox-next {
+
+  color: black;
+
+  background:
+    rgba(255,255,255,0.75);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+  .lightbox-prev,
+  .lightbox-next {
+
+    width: 52px;
+    height: 52px;
+
+    font-size: 2rem;
+  }
+
+  .lightbox-prev {
+
+    left: 14px;
+  }
+
+  .lightbox-next {
+
+    right: 14px;
+  }
+
+}
