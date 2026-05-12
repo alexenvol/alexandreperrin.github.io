@@ -77,7 +77,7 @@ window.addEventListener(
 revealProjects();
 
 /* ===================================================== */
-/* LIGHTBOX */
+/* LIGHTBOX GALLERY */
 /* ===================================================== */
 
 const images =
@@ -87,6 +87,10 @@ const images =
 
 if (images.length > 0) {
 
+  let currentIndex = 0;
+
+  /* ---------- Create lightbox ---------- */
+
   const lightbox =
     document.createElement("div");
 
@@ -94,28 +98,150 @@ if (images.length > 0) {
 
   document.body.appendChild(lightbox);
 
+  /* ---------- Image ---------- */
+
   const lightboxImage =
     document.createElement("img");
 
   lightbox.appendChild(lightboxImage);
 
-  images.forEach((image) => {
+  /* ---------- Prev button ---------- */
+
+  const prevButton =
+    document.createElement("button");
+
+  prevButton.classList.add("lightbox-prev");
+
+  prevButton.innerHTML = "‹";
+
+  lightbox.appendChild(prevButton);
+
+  /* ---------- Next button ---------- */
+
+  const nextButton =
+    document.createElement("button");
+
+  nextButton.classList.add("lightbox-next");
+
+  nextButton.innerHTML = "›";
+
+  lightbox.appendChild(nextButton);
+
+  /* ---------- Open ---------- */
+
+  function openImage(index) {
+
+    currentIndex = index;
+
+    lightboxImage.src =
+      images[currentIndex].src;
+
+    lightbox.classList.add("active");
+
+  }
+
+  /* ---------- Next ---------- */
+
+  function showNext() {
+
+    currentIndex =
+      (currentIndex + 1) % images.length;
+
+    lightboxImage.src =
+      images[currentIndex].src;
+
+  }
+
+  /* ---------- Previous ---------- */
+
+  function showPrev() {
+
+    currentIndex =
+      (currentIndex - 1 + images.length)
+      % images.length;
+
+    lightboxImage.src =
+      images[currentIndex].src;
+
+  }
+
+  /* ---------- Click images ---------- */
+
+  images.forEach((image, index) => {
 
     image.addEventListener("click", () => {
 
-      lightbox.classList.add("active");
-
-      lightboxImage.src = image.src;
+      openImage(index);
 
     });
 
   });
 
-  lightbox.addEventListener("click", () => {
+  /* ---------- Buttons ---------- */
 
-    lightbox.classList.remove("active");
+  nextButton.addEventListener(
+    "click",
+    (e) => {
 
-  });
+      e.stopPropagation();
+
+      showNext();
+
+    }
+  );
+
+  prevButton.addEventListener(
+    "click",
+    (e) => {
+
+      e.stopPropagation();
+
+      showPrev();
+
+    }
+  );
+
+  /* ---------- Keyboard ---------- */
+
+  document.addEventListener(
+    "keydown",
+    (e) => {
+
+      if (
+        !lightbox.classList.contains("active")
+      ) return;
+
+      if (e.key === "ArrowRight") {
+
+        showNext();
+
+      }
+
+      if (e.key === "ArrowLeft") {
+
+        showPrev();
+
+      }
+
+      if (e.key === "Escape") {
+
+        lightbox.classList.remove("active");
+
+      }
+
+    }
+  );
+
+  /* ---------- Close ---------- */
+
+  lightbox.addEventListener(
+    "click",
+    () => {
+
+      lightbox.classList.remove("active");
+
+    }
+  );
 
 }
 
