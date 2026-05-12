@@ -2476,3 +2476,18 @@ body:not(.dark-mode) .passion-bubble {
   line-height: 1.7;
 
 }
+
+/* ===================================================== */
+/* POSTER PROJECT IMAGE */
+/* ===================================================== */
+
+.project-visual.poster img {
+
+  max-height: 780px;
+
+  object-fit: contain;
+
+  background:
+    rgba(255,255,255,0.02);
+
+}
