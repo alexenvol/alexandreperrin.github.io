@@ -62,7 +62,8 @@ const translations = {
     vision_title:
       "Vision",
 
-    timeline_today_2: "Aujourd’hui",
+    timeline_today_2: 
+      "Aujourd’hui",
 
     vision_text:
       "Passionné par les systèmes complexes, l’innovation industrielle et l’aéronautique.",
@@ -100,23 +101,23 @@ const translations = {
     ecogenesia_title:
       "Ecogenesia",
 
-    ecogenesia_intro:
-      "Développement d’un projet mêlant ingénierie, systèmes embarqués et approche éco-conçue autour d’un système autonome expérimental.",
+    ecogenesia_text:
+      "Ecogenesia est un projet étudiant développé à l’ENIB dans le cadre d’un projet de conduite de projet objet.<br><br>Développé en Java, le jeu plonge le joueur dans un monde ravagé par la pollution et les activités humaines, où la nature est progressivement en train de disparaître.<br><br>L’objectif est d’explorer des zones dévastées, récupérer des déchets, nettoyer les environnements contaminés et restaurer progressivement l’équilibre du monde.",
     
     ecogenesia_li_1:
-      "Développement d’une architecture système modulaire",
+      "Développement Java orienté objet",
     
     ecogenesia_li_2:
-      "Intégration électronique et systèmes embarqués",
+      "Gestion de projet en équipe",
     
     ecogenesia_li_3:
-      "Approche expérimentale et prototypage rapide",
+      "Architecture logicielle et gameplay",
     
     ecogenesia_li_4:
-      "Développement logiciel et automatisation technique",
+      "Univers rétro 2D inspiré des enjeux écologiques",
     
     ecogenesia_li_5:
-      "Gestion complète du projet et documentation technique",
+      "Projet académique réalisé à l’ENIB",
     
     project_fishing_title:
       "Conception d’une canne à pêche",
@@ -345,24 +346,24 @@ const translations = {
 
     ecogenesia_title:
       "Ecogenesia",
-    
-    ecogenesia_intro:
-      "Development of a project combining engineering, embedded systems and eco-designed experimentation around an autonomous experimental system.",
+
+    ecogenesia_text:
+      "Ecogenesia is a student project developed at ENIB as part of an object-oriented project management course.<br><br>Developed in Java, the game immerses the player in a world devastated by pollution and human activities, where nature is gradually disappearing.<br><br>The objective is to explore ruined areas, collect waste, clean contaminated environments and progressively restore the balance of the world.",
     
     ecogenesia_li_1:
-      "Development of a modular system architecture",
+      "Object-oriented Java development",
     
     ecogenesia_li_2:
-      "Embedded electronics and systems integration",
+      "Team project management",
     
     ecogenesia_li_3:
-      "Experimental approach and rapid prototyping",
+      "Software architecture and gameplay",
     
     ecogenesia_li_4:
-      "Software development and technical automation",
+      "Retro 2D universe inspired by environmental challenges",
     
     ecogenesia_li_5:
-      "Full project management and technical documentation",
+      "Academic project developed at ENIB",
     
     project_fishing_title:
       "Fishing Rod Design",
