@@ -2491,3 +2491,54 @@ body:not(.dark-mode) .passion-bubble {
     rgba(255,255,255,0.02);
 
 }
+
+/* ===================================================== */
+/* PROJECT LINK */
+/* ===================================================== */
+
+.project-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  padding: 14px 22px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212,130,96,0.95),
+      rgba(212,130,96,0.72)
+    );
+
+  box-shadow:
+    0 10px 24px rgba(212,130,96,0.18);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+
+}
+
+.project-link:hover {
+
+  transform:
+    translateY(-3px);
+
+  opacity: 0.92;
+
+  box-shadow:
+    0 16px 34px rgba(212,130,96,0.22);
+
+}
