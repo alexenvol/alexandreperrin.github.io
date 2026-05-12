@@ -2458,3 +2458,21 @@ body:not(.dark-mode) .passion-bubble {
   }
 
 }
+
+.project-list {
+
+  margin-top: 24px;
+
+  padding-left: 18px;
+
+}
+
+.project-list li {
+
+  margin-bottom: 14px;
+
+  opacity: 0.82;
+
+  line-height: 1.7;
+
+}
