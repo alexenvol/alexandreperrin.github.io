@@ -102,6 +102,24 @@ const translations = {
 
     project_fishing_text:
       "Développement d’un prototype de canne à pêche en composite avec étude mécanique et simulation RDM par éléments finis. Travail orienté optimisation de rigidité, comportement vibratoire et réduction de masse.",
+
+    project_airfoil_title:
+      "Déformation d’un profil d’aile d’avion",
+
+    project_airfoil_intro:
+      "Étude du comportement mécanique et aérodynamique d’un profil d’aile d’avion avec simulations numériques sous ANSYS.",
+
+    project_airfoil_point1:
+      "Analyse des déformations sous chargement aérodynamique",
+
+    project_airfoil_point2:
+      "Étude des contraintes mécaniques et de la rigidité",
+
+    project_airfoil_point3:
+      "Modélisation et simulations éléments finis sous ANSYS",
+
+    project_airfoil_point4:
+      "Interprétation des résultats structurels et comportement du profil",
     
     lego_title:
       "Projet LEGO sous CATIA",
@@ -288,6 +306,24 @@ const translations = {
 
     project_fishing_text:
       "Development of a composite fishing rod prototype including structural analysis and finite element simulations. Focus on stiffness optimization, vibration behavior and weight reduction.",
+
+    project_airfoil_title:
+      "Aircraft Airfoil Deformation",
+
+    project_airfoil_intro:
+      "Study of the mechanical and aerodynamic behavior of an aircraft airfoil using ANSYS numerical simulations.",
+
+    project_airfoil_point1:
+      "Structural deformation analysis under aerodynamic loading",
+
+    project_airfoil_point2:
+      "Mechanical stress and stiffness analysis",
+
+    project_airfoil_point3:
+      "Finite element modeling and simulations using ANSYS",
+
+    project_airfoil_point4:
+      "Structural results interpretation and airfoil behavior analysis",
     
     lego_title:
       "LEGO Project in CATIA",
