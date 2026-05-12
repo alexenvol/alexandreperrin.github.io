@@ -97,6 +97,27 @@ const translations = {
     project_rafale_text:
       "Étude mécanique du système d’amortissement d’un train d’atterrissage de Rafale Marine avec corrélation expérimentation / simulation afin d’ajuster la raideur du ressort selon le cahier des charges d’absorption d’énergie et de tenue mécanique.",
 
+    ecogenesia_title:
+      "Ecogenesia",
+
+    ecogenesia_intro:
+      "Développement d’un projet mêlant ingénierie, systèmes embarqués et approche éco-conçue autour d’un système autonome expérimental.",
+    
+    ecogenesia_li_1:
+      "Développement d’une architecture système modulaire",
+    
+    ecogenesia_li_2:
+      "Intégration électronique et systèmes embarqués",
+    
+    ecogenesia_li_3:
+      "Approche expérimentale et prototypage rapide",
+    
+    ecogenesia_li_4:
+      "Développement logiciel et automatisation technique",
+    
+    ecogenesia_li_5:
+      "Gestion complète du projet et documentation technique",
+    
     project_fishing_title:
       "Conception d’une canne à pêche",
 
@@ -322,6 +343,27 @@ const translations = {
     project_rafale_text:
       "Mechanical study of a Rafale Marine landing gear damping system with experimental/simulation correlation to tune spring stiffness according to energy absorption and structural performance requirements.",
 
+    ecogenesia_title:
+      "Ecogenesia",
+    
+    ecogenesia_intro:
+      "Development of a project combining engineering, embedded systems and eco-designed experimentation around an autonomous experimental system.",
+    
+    ecogenesia_li_1:
+      "Development of a modular system architecture",
+    
+    ecogenesia_li_2:
+      "Embedded electronics and systems integration",
+    
+    ecogenesia_li_3:
+      "Experimental approach and rapid prototyping",
+    
+    ecogenesia_li_4:
+      "Software development and technical automation",
+    
+    ecogenesia_li_5:
+      "Full project management and technical documentation",
+    
     project_fishing_title:
       "Fishing Rod Design",
 
