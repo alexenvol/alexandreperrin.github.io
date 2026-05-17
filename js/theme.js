@@ -452,3 +452,49 @@ if (menuToggle && fullscreenMenu) {
   );
 
 }
+
+/* ===================================================== */
+/* SCROLL TO TOP */
+/* ===================================================== */
+
+const scrollTopButton =
+  document.getElementById("scrollTopButton");
+
+/* ---------- Show button ---------- */
+
+window.addEventListener("scroll", () => {
+
+  if (!scrollTopButton) return;
+
+  if (window.scrollY > 500) {
+
+    scrollTopButton.classList.add("visible");
+
+  } else {
+
+    scrollTopButton.classList.remove("visible");
+
+  }
+
+});
+
+/* ---------- Scroll smooth ---------- */
+
+if (scrollTopButton) {
+
+  scrollTopButton.addEventListener(
+    "click",
+    () => {
+
+      window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+      });
+
+    }
+  );
+
+}
